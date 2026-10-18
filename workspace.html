@@ -33,45 +33,296 @@
         <p class="page-intro">Bring approved knowledge, role-based access, sensitive-data safeguards, AI routing, and human review into one practical request path.</p>
         <div class="button-row"><a class="button primary" href="/pilot-access">Request Pilot Access</a><a class="button secondary" href="/how-it-works">See how a Pilot works</a></div>
       </div>
-      <div class="ws-hero-mockup-wrap">
-        <div class="ws-mockup" aria-label="Workspace product concept illustration">
-          <div class="ws-mockup-head"><span class="ws-mockup-title">Workspace</span><span class="ws-mockup-user">Signed in: Maya · Project Manager</span></div>
-          <div class="ws-mockup-body">
-            <div class="ws-mockup-block ws-mockup-sources">
-              <strong>Approved sources</strong>
-              <ul><li>✓ Client project library</li><li>✓ Proposal templates</li><li>✓ Team procedures</li></ul>
-            </div>
-            <div class="ws-mockup-block">
-              <strong>Request</strong>
-              <p class="ws-quote">"Draft a project status update from approved files."</p>
-            </div>
-            <div class="ws-mockup-block">
-              <strong>Routing</strong>
-              <p>Efficient model selected<br><span class="ws-dim">Estimated usage: visible</span></p>
-            </div>
-            <div class="ws-mockup-block ws-mockup-status">
-              <strong>Status</strong>
-              <p><span class="ws-badge">Review required before sending</span></p>
-            </div>
+      <div class="ws-trace-wrap">
+        <div class="ws-trace" role="img" aria-label="Illustrative controlled request trace">
+          <div class="ws-trace-glow" aria-hidden="true"></div>
+          <p class="ws-trace-kicker">ILLUSTRATIVE REQUEST TRACE</p>
+          <div class="ws-trace-request">
+            <strong>Client update request</strong>
+            <p>Prepare a weekly project update from approved files.</p>
+            <div class="ws-trace-meta"><span>Role: Project Manager</span><span>Workflow: Client updates</span></div>
           </div>
+          <div class="ws-trace-track">
+            <span class="ws-trace-spine" aria-hidden="true"></span>
+            <span class="ws-trace-traveler" aria-hidden="true"></span>
+            <ol class="ws-trace-steps">
+              <li class="ws-trace-step ws-trace-s1">
+                <span class="ws-trace-rail" aria-hidden="true">
+                  <svg viewBox="0 0 28 28"><title>Sources checked</title><desc>Source checks passed before the request continues.</desc><circle cx="14" cy="14" r="12" fill="#e7f1fb" stroke="#1769aa" stroke-width="2"/><path d="M9 14.2l3.4 3.4L19.5 10" fill="none" stroke="#1769aa" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div><p class="ws-trace-stephead"><span class="ws-trace-n">1</span>Sources checked</p><p class="ws-trace-stepsub">Project library + approved template</p></div>
+              </li>
+              <li class="ws-trace-step ws-trace-s2">
+                <span class="ws-trace-rail" aria-hidden="true">
+                  <svg viewBox="0 0 28 28"><title>Data check</title><desc>One detail marked for review before the request continues.</desc><circle cx="14" cy="14" r="12" fill="#fdf6e3" stroke="#c98f1b" stroke-width="2"/><path d="M14 8.5v6" stroke="#c98f1b" stroke-width="2.4" stroke-linecap="round"/><circle cx="14" cy="18.6" r="1.6" fill="#c98f1b"/></svg>
+                </span>
+                <div><p class="ws-trace-stephead"><span class="ws-trace-n">2</span>Data check</p><p class="ws-trace-stepsub">One detail marked for review</p></div>
+                <span class="ws-trace-flag">review</span>
+              </li>
+              <li class="ws-trace-step ws-trace-s3">
+                <span class="ws-trace-rail" aria-hidden="true">
+                  <svg viewBox="0 0 28 28"><title>Route selected</title><desc>An efficient AI route selected with visible estimated usage.</desc><circle cx="14" cy="14" r="12" fill="#e8f6f7" stroke="#1b9aaa" stroke-width="2"/><path d="M8 14h8m0 0l-2.6-2.6M16 14l-2.6 2.6M20 9v10" fill="none" stroke="#1b9aaa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div><p class="ws-trace-stephead"><span class="ws-trace-n">3</span>Route selected</p><p class="ws-trace-stepsub">Efficient AI · estimated usage visible</p></div>
+                <span class="ws-trace-tag">Efficient AI</span>
+              </li>
+              <li class="ws-trace-step ws-trace-s4">
+                <span class="ws-trace-rail" aria-hidden="true">
+                  <svg viewBox="0 0 28 28"><title>Manager review</title><desc>Draft ready for a manager to confirm.</desc><circle cx="14" cy="14" r="12" fill="#10243e" stroke="#10243e" stroke-width="2"/><path d="M9 14.2l3.4 3.4L19.5 10" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div><p class="ws-trace-stephead"><span class="ws-trace-n">4</span>Manager review</p><p class="ws-trace-stepsub">Draft is ready for confirmation</p></div>
+              </li>
+            </ol>
+          </div>
+          <p class="ws-trace-record"><strong>Recorded:</strong> role · sources · route · review status</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 页内快捷导航 -->
-  <nav class="ws-quicknav" aria-label="Workspace sections">
-    <a href="#workspace-access">Access</a>
-    <a href="#workspace-data-protection">Data protection</a>
-    <a href="#workspace-routing">Routing</a>
-    <a href="#workspace-review">Review</a>
-    <a href="#workspace-deployment">Deployment</a>
-  </nav>
+  <!-- 2. Deployment and data ownership -->
+  <section id="data-ownership" class="section" aria-labelledby="do-title" style="margin-top:72px">
+    <div class="section-heading"><div><p class="eyebrow">DEPLOYMENT AND DATA OWNERSHIP</p><h2 id="do-title">Choose where the Workspace runs — and how much direct control your team needs.</h2></div><p>Your workflow, approved sources, and AI rules can run in a Sunofla-managed Pilot, in your organization's cloud environment, or in a local / hybrid environment. The right choice depends on the work, the information involved, and the level of direct control your team needs.</p></div>
+    <div class="do-cards">
+      <article class="do-card">
+        <div class="do-diagram">
+          <svg viewBox="0 0 360 175" role="img" aria-labelledby="do-svg1-title do-svg1-desc">
+            <title id="do-svg1-title">Dedicated Pilot environment — deployment diagram</title>
+            <desc id="do-svg1-desc">Approved sources flow into a Pilot Workspace, then to an approved AI route. Sunofla support connects to the workspace through a documented support boundary.</desc>
+            <line class="do-line" x1="108" y1="55" x2="132" y2="55"/>
+            <line class="do-line" x1="228" y1="55" x2="252" y2="55"/>
+            <line class="do-dash do-pulse" x1="180" y1="90" x2="180" y2="108"/>
+            <rect class="do-node" x="8" y="28" width="100" height="54" rx="8"/>
+            <text class="do-label" x="58" y="50" font-size="12">Approved</text>
+            <text class="do-label" x="58" y="66" font-size="12">sources</text>
+            <rect class="do-node-hi" x="132" y="20" width="96" height="70" rx="8"/>
+            <text class="do-label" x="180" y="48" font-size="12.5" font-weight="600">Pilot</text>
+            <text class="do-label" x="180" y="64" font-size="12.5" font-weight="600">Workspace</text>
+            <rect class="do-node" x="252" y="28" width="100" height="54" rx="8"/>
+            <text class="do-label" x="302" y="50" font-size="12">Approved</text>
+            <text class="do-label" x="302" y="66" font-size="12">AI route</text>
+            <rect class="do-node-soft" x="132" y="108" width="96" height="40" rx="8" style="stroke-dasharray:5 4"/>
+            <text class="do-sub" x="180" y="124" font-size="11">Sunofla</text>
+            <text class="do-sub" x="180" y="138" font-size="11">support</text>
+            <text class="do-tiny" x="190" y="101" font-size="9" text-anchor="start">Support access</text>
+            <text class="do-tiny" x="180" y="163" font-size="9.5">Pilot scope</text>
+            <g aria-hidden="true">
+              <circle class="do-dot do-drift" cx="108" cy="55" r="4" style="--dx:24px"/>
+              <circle class="do-dot do-drift" cx="228" cy="55" r="4" style="--dx:24px;animation-delay:-3s"/>
+            </g>
+          </svg>
+        </div>
+        <p class="do-caption">A dedicated environment supports the agreed Pilot scope, with support and data-handling boundaries documented in the Pilot.</p>
+        <p class="do-num">01</p>
+        <h3>Sunofla-Managed Pilot</h3>
+        <p class="do-tag">Start quickly with a dedicated Pilot environment.</p>
+        <p>A Sunofla-managed Pilot gives a small team a practical way to test one controlled workflow before making a larger deployment decision.</p>
+        <p>The Pilot scope, approved sources, user roles, and permitted AI routes are defined before real work begins.</p>
+        <p class="do-best-label">BEST FOR</p>
+        <ul class="do-best">
+          <li>One workflow and a small Pilot group</li>
+          <li>Teams that want to validate the experience quickly</li>
+          <li>Early testing before a longer-term decision</li>
+        </ul>
+        <p class="do-foot">Sunofla operates the environment needed to deliver the approved Pilot scope. Support access and data-handling boundaries are documented with the Pilot.</p>
+      </article>
+      <article class="do-card">
+        <div class="do-diagram">
+          <svg viewBox="0 0 380 195" role="img" aria-labelledby="do-svg2-title do-svg2-desc">
+            <title id="do-svg2-title">Your environment, your account — deployment diagram</title>
+            <desc id="do-svg2-desc">Customer files enter a customer-controlled cloud environment that holds the workspace data and the customer AI account. Approved requests go to the selected AI provider. Sunofla support stays outside the environment boundary with approved, time-limited access.</desc>
+            <line class="do-line" x1="88" y1="90" x2="100" y2="90"/>
+            <line class="do-line" x1="190" y1="76" x2="190" y2="90"/>
+            <line class="do-line" x1="268" y1="107" x2="292" y2="107"/>
+            <line class="do-dash do-pulse" x1="190" y1="140" x2="190" y2="150"/>
+            <rect class="do-node" x="8" y="67" width="80" height="46" rx="8"/>
+            <text class="do-label" x="48" y="87" font-size="11">Customer</text>
+            <text class="do-label" x="48" y="101" font-size="11">files</text>
+            <rect class="do-boundary" x="100" y="8" width="180" height="132" rx="10"/>
+            <text x="190" y="27" font-size="11" font-weight="700" fill="#1769aa" text-anchor="middle">Customer cloud environment</text>
+            <rect class="do-node" x="112" y="42" width="156" height="34" rx="8"/>
+            <text class="do-label" x="190" y="63" font-size="11.5">Workspace + data</text>
+            <rect class="do-node-hi" x="112" y="90" width="156" height="34" rx="8"/>
+            <text class="do-label" x="190" y="111" font-size="11.5">Customer AI account</text>
+            <rect class="do-node" x="292" y="67" width="80" height="46" rx="8"/>
+            <text class="do-label" x="332" y="87" font-size="10.5">Selected AI</text>
+            <text class="do-label" x="332" y="101" font-size="10.5">provider</text>
+            <text class="do-tiny" x="198" y="147" font-size="8.5" text-anchor="start">approved / time-limited</text>
+            <rect class="do-node-soft" x="100" y="150" width="180" height="32" rx="8" style="stroke-dasharray:5 4"/>
+            <text class="do-sub" x="190" y="170" font-size="10.5">Approved Sunofla support</text>
+            <g aria-hidden="true">
+              <circle class="do-dot do-drift" cx="88" cy="90" r="4" style="--dx:12px"/>
+              <circle class="do-dot do-drift" cx="190" cy="76" r="4" style="--dx:0px;--dy:14px;animation-delay:-2s"/>
+              <circle class="do-dot do-drift" cx="268" cy="107" r="4" style="--dx:24px;animation-delay:-4s"/>
+            </g>
+          </svg>
+        </div>
+        <p class="do-caption">Files, workspace data, backups, and AI credentials can remain in the environment controlled by your organization. Support access is approved, limited, and recorded.</p>
+        <p class="do-num">02</p>
+        <h3>Customer-Owned Cloud Workspace</h3>
+        <p class="do-tag">Deploy in your cloud account. Use your AI account.</p>
+        <p>The Workspace is configured in cloud infrastructure controlled by your organization. Files, databases, vector indexes, and backups can remain in that environment, based on the deployment design.</p>
+        <p>Sunofla provides the Workspace template, workflow setup, access rules, routing policy, testing, and implementation support.</p>
+        <p class="do-best-label">BEST FOR</p>
+        <ul class="do-best">
+          <li>Teams with sensitive project or client information</li>
+          <li>Organizations that want direct ownership of their cloud environment</li>
+          <li>Teams already using approved cloud or AI accounts</li>
+        </ul>
+        <div class="do-foot-strong">
+          <strong>YOUR TEAM CONTROLS</strong>
+          <ul>
+            <li>File storage and approved knowledge sources</li>
+            <li>Database, vector index, backup, and retention settings</li>
+            <li>AI provider account and API credentials</li>
+            <li>User roles, cloud-routing rules, and support access</li>
+          </ul>
+        </div>
+      </article>
+      <article class="do-card">
+        <div class="do-diagram">
+          <svg viewBox="0 0 380 185" role="img" aria-labelledby="do-svg3-title do-svg3-desc">
+            <title id="do-svg3-title">Local control, approved cloud routes — deployment diagram</title>
+            <desc id="do-svg3-desc">Shared files flow to a local workspace inside the office environment, with backup and recovery. Approved work may use the customer-approved cloud AI account.</desc>
+            <line class="do-line" x1="102" y1="60" x2="114" y2="60"/>
+            <line class="do-line" x1="155" y1="78" x2="155" y2="94"/>
+            <line class="do-dash" x1="196" y1="60" x2="216" y2="86"/>
+            <rect x="8" y="8" width="196" height="140" rx="10" fill="#f2f7fc" stroke="#10243e" stroke-width="1.5"/>
+            <text x="106" y="27" font-size="11" font-weight="700" fill="#10243e" text-anchor="middle">Your office environment</text>
+            <rect class="do-node" x="20" y="42" width="82" height="36" rx="8"/>
+            <text class="do-label" x="61" y="64" font-size="10.5">Shared files</text>
+            <rect class="do-node-hi" x="114" y="42" width="82" height="36" rx="8"/>
+            <text class="do-label" x="155" y="58" font-size="11">Local</text>
+            <text class="do-label" x="155" y="72" font-size="11">Workspace</text>
+            <rect class="do-node" x="114" y="94" width="82" height="36" rx="8"/>
+            <text class="do-label" x="155" y="110" font-size="11">Backup /</text>
+            <text class="do-label" x="155" y="124" font-size="11">recovery</text>
+            <rect x="216" y="8" width="156" height="140" rx="10" fill="#ffffff" stroke="#9db4c8" stroke-width="1.5"/>
+            <text x="294" y="27" font-size="10.5" font-weight="700" fill="#52657b" text-anchor="middle">Customer-approved cloud</text>
+            <rect class="do-node" x="228" y="62" width="132" height="48" rx="8"/>
+            <text class="do-label" x="294" y="82" font-size="11">AI account +</text>
+            <text class="do-label" x="294" y="96" font-size="11">selected model</text>
+            <text class="do-tiny" x="206" y="62" font-size="9" text-anchor="middle">When approved</text>
+            <text class="do-tag-in" x="252" y="52" font-size="9.5" font-weight="700" fill="#1769aa" text-anchor="start" aria-hidden="true">✓ Approved</text>
+            <g aria-hidden="true">
+              <circle class="do-dot do-drift" cx="102" cy="60" r="4" style="--dx:12px"/>
+              <circle class="do-dot do-drift" cx="155" cy="78" r="4" style="--dx:0px;--dy:16px;animation-delay:-2s;animation-duration:8s"/>
+              <circle class="do-dot do-rare" cx="196" cy="60" r="4" style="--dx:20px;--dy:26px"/>
+            </g>
+          </svg>
+        </div>
+        <p class="do-caption">Selected services can run locally, while approved work may use a customer-controlled cloud AI account when the workflow allows it.</p>
+        <p class="do-num">03</p>
+        <h3>Local / Hybrid Workspace</h3>
+        <p class="do-tag">Keep selected work close to the team. Use cloud AI where it adds value.</p>
+        <p>A Local or Hybrid Workspace runs selected services in your office or local environment. Files, shared storage, and local AI capability can remain close to the team, while approved tasks may use your organization's cloud AI account when the workflow allows it.</p>
+        <p class="do-best-label">BEST FOR</p>
+        <ul class="do-best">
+          <li>Large files or active shared project data</li>
+          <li>Teams that need local storage, backup, or recovery capability</li>
+          <li>Workflows that need both local control and selected cloud capability</li>
+        </ul>
+        <p class="do-foot">A Pilot can begin in a dedicated cloud workspace. Local capability can be added when it supports the workflow.</p>
+      </article>
+    </div>
+  </section>
 
-  <!-- 2. One request, one governed path -->
-  <section class="section" aria-labelledby="ws-path-title" style="margin-top:72px">
-    <div class="section-heading"><div><p class="eyebrow">ONE REQUEST, ONE GOVERNED PATH</p><h2 id="ws-path-title">The Workspace gives every request a visible path.</h2></div><p>Each request begins with the right role, approved sources, routing rules, and review requirements.</p></div>
-    <div class="ws-flow" aria-label="Governed request path">
+  <!-- 2b. Data handling, in plain language (part of deployment and data ownership) -->
+  <section class="section" aria-labelledby="do-data-title" style="margin-top:72px">
+    <div class="do-band">
+      <div class="section-heading"><div><p class="eyebrow">DATA HANDLING, IN PLAIN LANGUAGE</p><h2 id="do-data-title">See what is connected, where it runs, and who can access it.</h2></div><p>For a customer-owned cloud or Local / Hybrid deployment, customer files, workspace data, vector indexes, backups, and AI credentials remain in the customer-controlled environment.</p></div>
+      <p class="do-band-lead">Sunofla can configure and support the Workspace without hosting the customer's source files or AI account. When support access is needed, it is approved, limited, and recorded.</p>
+      <div class="flow-wrap">
+        <p class="flow-title">A request follows visible rules.</p>
+        <p class="flow-sub">The Workspace records the approved source, selected route, review requirement, and support activity around the work.</p>
+        <svg class="flow-single-svg" viewBox="0 0 400 620" role="img" aria-labelledby="do-flow-title do-flow-desc">
+          <title id="do-flow-title">A request follows visible rules — request path</title>
+          <desc id="do-flow-desc">A request moves from an approved source through a workspace rule to a route choice — local or hybrid, or customer-approved cloud AI — then human review when required, ending in recorded activity.</desc>
+          <line class="do-line" x1="200" y1="44" x2="200" y2="588"/>
+          <line class="do-line" x1="200" y1="296" x2="126" y2="320"/>
+          <line class="do-line" x1="200" y1="296" x2="274" y2="320"/>
+          <rect class="do-node" x="60" y="16" width="280" height="56" rx="8"/>
+          <text class="do-label" x="200" y="47" font-size="13">Approved source</text>
+          <rect class="do-node" x="60" y="128" width="280" height="56" rx="8"/>
+          <text class="do-label" x="200" y="159" font-size="13">Workspace rule</text>
+          <rect class="do-node-hi" x="60" y="240" width="280" height="56" rx="8"/>
+          <text class="do-label" x="200" y="271" font-size="12.5">Local or customer cloud route</text>
+          <rect class="do-node-soft" x="56" y="320" width="140" height="44" rx="8"/>
+          <text class="do-label" x="126" y="345" font-size="11">Local / Hybrid</text>
+          <rect class="do-node-soft" x="204" y="320" width="140" height="44" rx="8"/>
+          <text class="do-label" x="274" y="339" font-size="10.5">Customer-approved</text>
+          <text class="do-label" x="274" y="353" font-size="10.5">cloud AI</text>
+          <rect class="do-node" x="60" y="400" width="280" height="56" rx="8"/>
+          <text class="do-label" x="200" y="431" font-size="12.5">Human review when required</text>
+          <rect class="do-node" x="60" y="532" width="280" height="56" rx="8"/>
+          <text class="do-label" x="200" y="563" font-size="13">Recorded activity</text>
+          <g class="flow-review-badge" aria-hidden="true">
+            <circle cx="200" cy="386" r="10" fill="#e9f2fa" stroke="#1769aa" stroke-width="1.5"/>
+            <path d="M195.5,386 l3,3.2 l6,-6.4" fill="none" stroke="#1769aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <g aria-hidden="true">
+            <circle class="do-dot flow-dot-s1" cx="200" cy="44" r="4.5"/>
+            <circle class="do-dot flow-dot-s2" cx="200" cy="44" r="4.5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="do-cols">
+        <div>
+          <h3>FOR CUSTOMER-OWNED DEPLOYMENTS</h3>
+          <ul class="do-check">
+            <li><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="9.5" fill="none" stroke="#1769aa" stroke-width="1.8"/><path d="M7 11.5l2.8 2.8L15.5 8" fill="none" stroke="#1769aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>The Workspace, database, vector index, and file storage run in the customer environment.</span></li>
+            <li><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="9.5" fill="none" stroke="#1769aa" stroke-width="1.8"/><path d="M7 11.5l2.8 2.8L15.5 8" fill="none" stroke="#1769aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>AI provider credentials are created and controlled by the customer.</span></li>
+            <li><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="9.5" fill="none" stroke="#1769aa" stroke-width="1.8"/><path d="M7 11.5l2.8 2.8L15.5 8" fill="none" stroke="#1769aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Customer files and full prompts are not copied to Sunofla-hosted storage or analytics systems.</span></li>
+            <li><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="9.5" fill="none" stroke="#1769aa" stroke-width="1.8"/><path d="M7 11.5l2.8 2.8L15.5 8" fill="none" stroke="#1769aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Support access is approved by the customer, limited in time, and recorded.</span></li>
+            <li><svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="9.5" fill="none" stroke="#1769aa" stroke-width="1.8"/><path d="M7 11.5l2.8 2.8L15.5 8" fill="none" stroke="#1769aa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Export, retention, backup, and deletion settings remain visible to the customer.</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>WHEN A WORKFLOW USES CLOUD AI</h3>
+          <p>Cloud AI is used only when the workflow allows it.</p>
+          <p>The approved request or retrieval context is sent to the model provider selected by the customer, using the customer's organization account and policy. The Workspace records the selected route and the reason for it.</p>
+          <div class="do-cloudflow">
+            <svg viewBox="0 0 560 120" role="img" aria-labelledby="do-cf-title do-cf-desc">
+              <title id="do-cf-title">Cloud AI path — data flow</title>
+              <desc id="do-cf-desc">An approved request travels from the customer-controlled workspace through the customer-approved AI route to the customer-selected model provider.</desc>
+              <line class="do-line" x1="170" y1="60" x2="200" y2="60"/>
+              <line class="do-line" x1="360" y1="60" x2="390" y2="60"/>
+              <rect class="do-node" x="10" y="32" width="160" height="56" rx="8"/>
+              <text class="do-label" x="90" y="55" font-size="11.5">Customer-controlled</text>
+              <text class="do-label" x="90" y="71" font-size="11.5">Workspace</text>
+              <rect class="do-node-soft" x="200" y="32" width="160" height="56" rx="8"/>
+              <text class="do-label" x="280" y="55" font-size="11.5">Customer-approved</text>
+              <text class="do-label" x="280" y="71" font-size="11.5">AI route</text>
+              <rect class="do-node" x="390" y="32" width="160" height="56" rx="8"/>
+              <text class="do-label" x="470" y="55" font-size="11.5">Customer-selected</text>
+              <text class="do-label" x="470" y="71" font-size="11.5">model provider</text>
+              <g aria-hidden="true">
+                <circle class="do-dot do-drift" cx="170" cy="60" r="4" style="--dx:30px;animation-duration:8s"/>
+                <circle class="do-dot do-drift" cx="360" cy="60" r="4" style="--dx:30px;animation-duration:8s;animation-delay:-4s"/>
+              </g>
+            </svg>
+          </div>
+          <p class="do-emph">Cloud use is a workflow decision — not a hidden default.</p>
+        </div>
+      </div>
+      <div class="do-owner">
+        <p class="do-owner-label">A WORKSPACE OWNER CAN SEE</p>
+        <div class="do-owner-grid">
+          <div>Approved sources</div>
+          <div>Who can use each workflow</div>
+          <div>Which tasks may use cloud AI</div>
+          <div>Usage, cost, review, and support-access records</div>
+        </div>
+        <p class="do-owner-note">The goal is to make the operating rules visible to the people responsible for the workspace.</p>
+      </div>
+      <p class="do-outro">The same Workspace controls access, data boundaries, AI routing, and review around each request.</p>
+    </div>
+  </section>
+
+  <!-- 3. How the Workspace governs one request -->
+  <section class="section" aria-labelledby="ws-govern-title" style="margin-top:72px">
+    <div class="section-heading"><div><p class="eyebrow">HOW THE WORKSPACE GOVERNS ONE REQUEST</p><h2 id="ws-govern-title">Four controls keep everyday AI work understandable.</h2></div><p>The Workspace gives a team one practical path for using approved knowledge, choosing an appropriate AI route, and keeping people responsible for important decisions.</p></div>
+    <div class="ws-flow ws-flow-compact" aria-label="Governed request path summary">
       <div class="ws-flow-node"><span class="ws-flow-icon">👤</span><strong>Signed-in user</strong><small>The request starts with a known role.</small></div>
       <span class="ws-flow-arrow" aria-hidden="true">→</span>
       <div class="ws-flow-node"><span class="ws-flow-icon">🔒</span><strong>Role and source check</strong><small>Only approved files are available.</small></div>
@@ -82,116 +333,50 @@
       <span class="ws-flow-arrow" aria-hidden="true">→</span>
       <div class="ws-flow-node"><span class="ws-flow-icon">✓</span><strong>Review or approved output</strong><small>Sensitive actions stay with a person.</small></div>
     </div>
-  </section>
-
-  <!-- 3. One entry point, different roles -->
-  <section id="workspace-access" class="section" aria-labelledby="ws-roles-title" style="margin-top:72px">
-    <div class="section-heading"><div><p class="eyebrow">ONE ENTRY POINT</p><h2 id="ws-roles-title">The same Workspace can show different people different boundaries.</h2></div><p>Each person receives access appropriate to their role and workflow.</p></div>
-    <div class="ws-roles-grid">
-      <article class="ws-role-card">
-        <div class="ws-role-head"><span class="ws-avatar">○</span><strong>Owner</strong></div>
-        <ul><li>All approved workspaces</li><li>Policy and access settings</li><li>Usage overview</li></ul>
-      </article>
-      <article class="ws-role-card">
-        <div class="ws-role-head"><span class="ws-avatar">○</span><strong>Manager</strong></div>
-        <ul><li>Team project libraries</li><li>Review queue</li><li>Workflow progress</li></ul>
-      </article>
-      <article class="ws-role-card">
-        <div class="ws-role-head"><span class="ws-avatar">○</span><strong>Staff</strong></div>
-        <ul><li>Assigned project folders</li><li>Approved templates</li><li>Read-only or limited actions</li></ul>
-        <p class="ws-lock-note">🔒 Owner-only folder requires elevation</p>
-      </article>
-    </div>
-    <p class="ws-fine">Access is defined around roles and approved sources, giving the team a clearer shared way to use AI.</p>
-  </section>
-
-  <!-- 4. Sensitive-data check before AI -->
-  <section id="workspace-data-protection" class="section" aria-labelledby="ws-data-title" style="margin-top:72px">
-    <div class="section-heading"><div><p class="eyebrow">CHECK BEFORE AI</p><h2 id="ws-data-title">Sensitive details can be reviewed before a request leaves the Workspace.</h2></div><p>Rules can flag, mask, or stop higher-risk information before a request reaches a selected AI service. When the risk is unclear, the request stays visible for human review.</p></div>
-    <div class="ws-data-flow" aria-label="Sensitive data check flow">
-      <div class="ws-data-doc">
-        <strong>Project update draft</strong>
-        <p>Client name: <span class="ws-masked">[masked]</span></p>
-        <p>Email: <span class="ws-masked">[masked]</span></p>
-        <p>Project amount: <span class="ws-review">[review needed]</span></p>
-      </div>
-      <span class="ws-flow-arrow" aria-hidden="true">↓</span>
-      <div class="ws-data-step ws-allowed"><strong>Approved request</strong><small>continues to AI</small></div>
-      <span class="ws-flow-arrow" aria-hidden="true">↓</span>
-      <div class="ws-data-step ws-allowed"><strong>Selected AI route</strong><small>efficient model</small></div>
-      <span class="ws-flow-arrow" aria-hidden="true">↓</span>
-      <div class="ws-data-step ws-needs-review"><strong>Review required</strong><small>a person confirms</small></div>
-    </div>
-    <p class="ws-fine">A Workspace adds practical safeguards alongside your existing legal, compliance, and security responsibilities.<br>During a Pilot, your team decides which sources are connected, which requests may use cloud models, and which actions always require human review.</p>
-  </section>
-
-  <!-- 5. Smart routing with visible usage -->
-  <section id="workspace-routing" class="section" aria-labelledby="ws-route-title" style="margin-top:72px">
-    <div class="section-heading"><div><p class="eyebrow">ROUTE WITH A REASON</p><h2 id="ws-route-title">Different tasks can use different models, routes, and budgets.</h2></div><p>The Workspace can route work according to practical rules: local or private handling where appropriate, efficient models for routine work, and premium models only when the task justifies them.</p></div>
-    <div class="ws-router">
-      <div class="ws-router-main">
-        <div class="ws-router-node"><strong>Team request</strong></div>
-        <span class="ws-flow-arrow" aria-hidden="true">↓</span>
-        <div class="ws-router-node ws-router-hub"><strong>Workspace router</strong></div>
-        <div class="ws-router-paths">
-          <div class="ws-router-path"><strong>Local / private</strong><small>For selected internal work and approved local workflows.</small></div>
-          <div class="ws-router-path"><strong>Efficient</strong><small>For routine summaries, drafts, and low-complexity tasks.</small></div>
-          <div class="ws-router-path"><strong>Premium</strong><small>For higher-complexity work where the team decides it is justified.</small></div>
+    <p class="ws-govern-note">Each request follows the rules defined for that workflow.</p>
+    <div class="ws-ctrl-grid">
+      <article class="ws-ctrl-card">
+        <h3>ACCESS AND ROLES</h3>
+        <p>People see the sources and actions appropriate to their role. Owners manage policies, managers review work, and staff use approved workflows.</p>
+        <div class="ws-ctrl-roles" aria-label="Role summary">
+          <div class="ws-ctrl-role"><span class="ws-avatar">○</span><div><strong>Owner</strong><small>Manages policies and access</small></div></div>
+          <div class="ws-ctrl-role"><span class="ws-avatar">○</span><div><strong>Manager</strong><small>Reviews work in the queue</small></div></div>
+          <div class="ws-ctrl-role"><span class="ws-avatar">○</span><div><strong>Staff</strong><small>Uses approved workflows</small></div></div>
         </div>
-        <span class="ws-flow-arrow" aria-hidden="true">↓</span>
-        <div class="ws-router-node"><strong>Usage record</strong></div>
-      </div>
-      <aside class="ws-usage-panel" aria-label="Usage record example">
-        <strong>Usage record</strong>
-        <ul><li>Route selected</li><li>Reason recorded</li><li>Review effort visible</li><li>Usage visible</li></ul>
-      </aside>
+      </article>
+      <article class="ws-ctrl-card">
+        <h3>DATA BOUNDARIES</h3>
+        <p>Rules can flag, mask, or stop higher-risk details before a request reaches an approved AI route. Unclear cases remain visible for review.</p>
+        <div class="ws-ctrl-doc" aria-label="Sensitive data check summary">
+          <p class="ws-ctrl-doc-title">Project update draft</p>
+          <p>Client name: <span class="ws-masked">[masked]</span></p>
+          <p>Project amount: <span class="ws-review">[review needed]</span></p>
+        </div>
+      </article>
+      <article class="ws-ctrl-card">
+        <h3>ROUTING AND COST VISIBILITY</h3>
+        <p>Routine work can use efficient AI, while higher-cost routes are reserved for work that benefits from them. Route choice, usage, and review effort remain visible.</p>
+        <div class="ws-ctrl-routes" aria-label="Route options summary">
+          <div class="ws-router-path"><strong>Local / private</strong><small>For selected internal work.</small></div>
+          <div class="ws-router-path"><strong>Efficient</strong><small>For routine summaries and drafts.</small></div>
+          <div class="ws-router-path"><strong>Premium</strong><small>For higher-complexity work.</small></div>
+        </div>
+      </article>
+      <article class="ws-ctrl-card">
+        <h3>HUMAN REVIEW AND RECORDS</h3>
+        <p>The Workspace can prepare drafts and summaries. A person remains responsible for sending, approving, changing records, or sharing sensitive information.</p>
+        <div class="ws-ctrl-compare" aria-label="AI help versus human confirmation">
+          <div><strong>AI can help</strong><small>Search · summarize · draft</small></div>
+          <div><strong>A person confirms</strong><small>Send · approve · share</small></div>
+        </div>
+        <p class="ws-ctrl-record"><span>Activity record:</span> Role checked · Sources used · Route selected · Review status</p>
+      </article>
     </div>
-    <p class="ws-fine">Cloud provider charges, model usage, exceptions, and review effort remain visible to the customer. Routine work can use efficient AI, while higher-cost AI is reserved for work that benefits from it.</p>
   </section>
 
-  <!-- 6. Human review and activity record -->
-  <section id="workspace-review" class="section" aria-labelledby="ws-review-title" style="margin-top:72px">
-    <div class="section-heading"><div><p class="eyebrow">KEEP PEOPLE IN THE LOOP</p><h2 id="ws-review-title">Drafting can be fast. Decisions should still be clear.</h2></div><p>The Workspace can help search, summarize, classify, and prepare drafts. It should not silently send, publish, approve, or change sensitive information without the right person involved.</p></div>
-    <div class="ws-review-grid">
-      <article class="ws-review-card">
-        <strong>AI can help</strong>
-        <ul><li>✓ Search approved files</li><li>✓ Summarize</li><li>✓ Draft</li><li>✓ Prepare a checklist</li></ul>
-      </article>
-      <article class="ws-review-card">
-        <strong>A person confirms</strong>
-        <ul><li>• Send to client</li><li>• Change a record</li><li>• Approve a payment</li><li>• Share sensitive information</li></ul>
-      </article>
-    </div>
-    <div class="ws-activity-strip" aria-label="Activity record example">
-      <strong>Activity record</strong>
-      <span>Role checked · Sources used · Route selected · Review effort visible</span>
-    </div>
-    <p class="ws-fine">The activity record supports review, handoff, and accountability.</p>
-  </section>
-
-  <!-- 7. A real Pilot, with clear boundaries -->
+  <!-- 4. A real Pilot, with clear boundaries -->
   <section class="section" aria-labelledby="ws-pilot-title" style="margin-top:72px">
-    <div class="section-heading"><div><p class="eyebrow">START WITH A REAL PILOT</p><h2 id="ws-pilot-title">Test one repeated workflow before changing the whole company.</h2></div><p>A Sunofla Pilot is a guided implementation around one real workflow. Together, we define the approved sources, user roles, data boundaries, AI route, and human review point. Your team then uses it with a small group and real work before any broader rollout.</p></div>
-
-    <div class="ws-pilot-defines" aria-label="What a Pilot defines">
-      <h3>WHAT A PILOT DEFINES</h3>
-      <div class="ws-pilot-defines-grid">
-        <div class="ws-pilot-define-item"><span class="ws-define-num">01</span><strong>One workflow</strong><p>Choose one repeated task where work currently slows down, loses context, or creates uncertainty.</p></div>
-        <div class="ws-pilot-define-item"><span class="ws-define-num">02</span><strong>Approved sources</strong><p>Connect only the files, templates, and procedures that belong in the Pilot.</p></div>
-        <div class="ws-pilot-define-item"><span class="ws-define-num">03</span><strong>Roles and boundaries</strong><p>Decide who can use which sources, what stays read-only, and where escalation is required.</p></div>
-        <div class="ws-pilot-define-item"><span class="ws-define-num">04</span><strong>AI route and review</strong><p>Set when work can use local, efficient, or premium AI — and where a person must confirm.</p></div>
-        <div class="ws-pilot-define-item"><span class="ws-define-num">05</span><strong>Evidence to review</strong><p>Review quality, exceptions, model usage, cost, and the human review time required before expanding.</p></div>
-      </div>
-    </div>
-
-    <div class="ws-starting-points" aria-label="Common starting points">
-      <h3>Common starting points</h3>
-      <div class="ws-starting-grid">
-        <div class="ws-start-item"><span class="ws-start-num">→</span><strong>Search approved project files</strong><p>Prepare a client update from current project folders and approved templates.</p></div>
-        <div class="ws-start-item"><span class="ws-start-num">→</span><strong>Prepare internal proposals</strong><p>Use approved proposal templates and team procedures without copying material between personal AI accounts.</p></div>
-        <div class="ws-start-item"><span class="ws-start-num">→</span><strong>Review incoming requests</strong><p>Summarize and classify routine requests while flagging sensitive details for a person to review.</p></div>
-      </div>
-    </div>
+    <div class="section-heading"><div><p class="eyebrow">START WITH A REAL PILOT</p><h2 id="ws-pilot-title">Test one workflow with real work and clear boundaries.</h2></div><p>A guided Pilot connects one approved workflow, a small group, defined sources, an AI route, and a review point. The team then reviews quality, exceptions, usage, cost, and review effort before choosing the next step.</p></div>
 
     <article class="ws-pilot-card">
       <p class="ws-pilot-example">Example Pilot — illustrative workflow</p>
@@ -207,39 +392,14 @@
     <p class="ws-fine" style="margin-top:16px">Pilot availability is limited while we validate the product with a small number of Orange County teams.</p>
   </section>
 
-  <!-- 8. Choose where the Workspace runs -->
-  <section id="workspace-deployment" class="section" aria-labelledby="ws-deploy-title" style="margin-top:72px">
-    <div class="section-heading"><div><p class="eyebrow">CHOOSE WHERE IT RUNS</p><h2 id="ws-deploy-title">The same Workspace can begin in the cloud and grow as the work requires.</h2></div><p>Start with the smallest practical deployment. A dedicated cloud workspace can support an early Pilot. Local or hybrid deployment can be added when data location, large files, team needs, or continuity requirements make it useful. The deployment choice follows the workflow and its boundaries.</p></div>
-    <div class="ws-deploy-grid">
-      <article class="ws-deploy-card">
-        <strong>Cloud Pilot</strong>
-        <p class="ws-deploy-tag">Start quickly in a dedicated cloud workspace.</p>
-        <p>A dedicated workspace for testing one workflow, roles, approved sources, and review boundaries.</p>
-      </article>
-      <article class="ws-deploy-card">
-        <strong>Local Workspace</strong>
-        <p class="ws-deploy-tag">Keep selected workflows and data closer to your office.</p>
-        <p>Consider local AI compute or shared storage when the work, file size, or data-location requirements justify it.</p>
-      </article>
-      <article class="ws-deploy-card">
-        <strong>Hybrid Workspace</strong>
-        <p class="ws-deploy-tag">Use local controls where they matter, with selected cloud models where they help.</p>
-        <p>Combine practical local storage or compute with cloud services chosen for the task.</p>
-      </article>
-    </div>
-    <p class="ws-deploy-note">Cloud, local, and hybrid deployment options support different workflow requirements.</p>
-    <p style="margin-top:16px"><a href="/solutions#systems" style="color:var(--accent);font-weight:600">Explore Deployment Choices →</a></p>
-  </section>
-
-  <!-- 9. Final CTA -->
+  <!-- 5. Final CTA -->
   <section class="section shell final-cta" style="margin-top:72px" aria-labelledby="ws-cta-title">
     <p class="eyebrow">REQUEST PILOT ACCESS</p>
     <h2 id="ws-cta-title">Start with one workflow your team already wants to improve.</h2>
-    <p>Tell us where work slows down, where access is unclear, or where AI use feels hard to control. We'll help you identify a practical Pilot boundary before recommending a larger system.</p>
+    <p>Tell us where work slows down, where access is unclear, or where AI use feels hard to control. We’ll help identify a practical Pilot boundary and the right environment for the work.</p>
     <div class="button-row"><a class="button primary" href="/pilot-access">Request Pilot Access</a></div>
-    <p style="margin-top:16px"><a href="/booking" style="color:var(--dim);text-decoration:underline">Need onsite IT help instead? Book Onsite Service</a></p>
+    <p style="margin-top:16px"><a href="/solutions#systems" style="color:var(--accent);font-weight:600">Explore deployment options →</a></p>
   </section>
-
 </main>
 
 <footer>
