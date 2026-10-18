@@ -66,7 +66,7 @@ for _fn, _ct in [('network.webp', 'image/webp'),
         entries += js_binary_entry('/assets/' + _fn, _p, _ct)
 
 # sitemap.xml and robots.txt (static files, served with explicit content types)
-for _sfn, _sroute in [('sitemap.xml', '/sitemap.xml'), ('robots.txt', '/robots.txt')]:
+for _sfn, _sroute in [('sitemap.xml', '/sitemap.xml'), ('robots.txt', '/robots.txt'), ('BingSiteAuth.xml', '/BingSiteAuth.xml')]:
     _sp = DIR + _sfn
     assert _os.path.exists(_sp), f"missing {_sfn}"
     entries += js_entry(_sroute, open(_sp).read())
@@ -94,7 +94,7 @@ async function handleRequest(request) {
     }
     // Text content
     var html = entry;
-    var ct = path === '/sitemap.xml' ? 'application/xml; charset=utf-8' : (path === '/robots.txt' ? 'text/plain; charset=utf-8' : (path === '/assets/site.css' ? 'text/css; charset=utf-8' : (path === '/styles.css' ? 'text/css; charset=utf-8' : 'text/html; charset=utf-8')));
+    var ct = (path === '/sitemap.xml' || path === '/BingSiteAuth.xml') ? 'application/xml; charset=utf-8' : (path === '/robots.txt' ? 'text/plain; charset=utf-8' : (path === '/assets/site.css' ? 'text/css; charset=utf-8' : (path === '/styles.css' ? 'text/css; charset=utf-8' : 'text/html; charset=utf-8')));
     return new Response(html, { headers: { 'Content-Type': ct, 'Cache-Control': 'public, max-age=300' } });
   }
   return new Response('Not found', { status: 404 });
