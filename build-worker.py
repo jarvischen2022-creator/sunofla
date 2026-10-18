@@ -65,11 +65,11 @@ for _fn, _ct in [('network.webp', 'image/webp'),
     if _os.path.exists(_p):
         entries += js_binary_entry('/assets/' + _fn, _p, _ct)
 
-# sitemap
-urls = [""] + [r for r in sorted(route_map.values()) if r != "/"]
-sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + \
-    "".join(f'  <url><loc>https://sunofla.com{u if u else "/"}</loc></url>\n' for u in urls) + '</urlset>\n'
-entries += js_entry('/sitemap.xml', sitemap)
+# sitemap.xml and robots.txt (static files, served with explicit content types)
+for _sfn, _sroute in [('sitemap.xml', '/sitemap.xml'), ('robots.txt', '/robots.txt')]:
+    _sp = DIR + _sfn
+    assert _os.path.exists(_sp), f"missing {_sfn}"
+    entries += js_entry(_sroute, open(_sp).read())
 
 worker = """var PAGES = {
 """ + entries + """};
@@ -94,7 +94,7 @@ async function handleRequest(request) {
     }
     // Text content
     var html = entry;
-    var ct = path === '/sitemap.xml' ? 'application/xml; charset=utf-8' : (path === '/assets/site.css' ? 'text/css; charset=utf-8' : (path === '/styles.css' ? 'text/css; charset=utf-8' : 'text/html; charset=utf-8'));
+    var ct = path === '/sitemap.xml' ? 'application/xml; charset=utf-8' : (path === '/robots.txt' ? 'text/plain; charset=utf-8' : (path === '/assets/site.css' ? 'text/css; charset=utf-8' : (path === '/styles.css' ? 'text/css; charset=utf-8' : 'text/html; charset=utf-8')));
     return new Response(html, { headers: { 'Content-Type': ct, 'Cache-Control': 'public, max-age=300' } });
   }
   return new Response('Not found', { status: 404 });
