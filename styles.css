@@ -951,3 +951,25 @@ a.journey-action { margin-top: auto; padding: 16px 0 3px; display: flex; align-i
 @media (max-width: 700px) {
   .pf-row, .pf-row-3, .pf-concerns { grid-template-columns: 1fr; }
 }
+
+/* Solutions deployment decision page */
+.sol-hero-grid { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,.95fr); gap: clamp(32px,4vw,64px); align-items: center; width: min(100% - 48px, 1160px); margin-inline: auto; padding: 48px 0; }
+.sol-hero-img-wrap { min-width: 0; }
+.sol-paths-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; max-width: 1100px; margin: 0 auto; }
+.sol-path-card { border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; background: var(--surface); min-width: 0; }
+.sol-path-card h3 { margin: 8px 0 12px; }
+.sol-path-card p { font-size: .92rem; color: var(--dim); }
+.sol-path-when { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); font-size: .85rem !important; }
+.sol-control-list { display: grid; gap: 12px; max-width: 800px; margin: 0 auto; }
+.sol-control-item { border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; background: var(--surface); }
+.sol-control-item strong { display: block; margin-bottom: 6px; }
+.sol-control-item p { margin: 0; font-size: .9rem; color: var(--dim); }
+.sol-local-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; max-width: 1000px; margin: 0 auto; }
+.sol-local-item { padding: 20px; border-left: 2px solid var(--accent); min-width: 0; }
+.sol-local-item strong { display: block; margin-bottom: 8px; }
+.sol-local-item p { margin: 0; font-size: .9rem; color: var(--dim); }
+.tier-sub { color: var(--accent); font-weight: 600; font-size: .9rem; margin: 4px 0 12px; }
+@media (max-width: 900px) {
+  .sol-hero-grid { grid-template-columns: 1fr; width: min(100% - 32px, 620px); padding: 32px 0; }
+  .sol-paths-grid, .sol-local-grid { grid-template-columns: 1fr; }
+}

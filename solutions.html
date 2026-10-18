@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deployment — Sunofla AI Workspace</title>
-<meta name="description" content="Practical AI, networks, storage, backup. Build the system your team actually needs — three right-sized paths from a single AI workstation to private AI with business continuity.">
+<title>Deployment Choices — Sunofla</title>
+<meta name="description" content="Choose the smallest practical place for your AI Workspace to run. Cloud, local, or hybrid — hardware is optional, not the starting assumption.">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
@@ -23,58 +23,97 @@
 </header>
 
 <main class="page shell">
-  <p class="eyebrow">Practical AI · Networks · Storage · Backup</p>
-  <h1>Sunofla AI Workspace: choose the right place for it to run.</h1>
-  <p class="page-intro">Sunofla connects the files, people, devices, and AI tools your work depends on—then supports them as one operating environment instead of a pile of unrelated parts.</p>
 
-  <div class="page-promo"><img src="/assets/ai-workflow-team-balanced.jpg" alt="Creative professionals reviewing a video project together at editing workstations"><div><p class="eyebrow">AI that fits the work already on screen</p><h2>Prove the workflow before expanding the infrastructure.</h2><p>Start with one repeated daily workflow. Add local compute, shared storage, and continuity only where the assessment shows they improve speed, control, or recovery.</p></div></div>
+  <!-- 1. Hero -->
+  <section class="sol-hero" aria-labelledby="sol-hero-title">
+    <div class="sol-hero-grid">
+      <div>
+        <p class="eyebrow">DEPLOYMENT CHOICES</p>
+        <h1 id="sol-hero-title">Choose the smallest practical place for your AI Workspace to run.</h1>
+        <p class="page-intro">Start with one controlled workflow in the cloud. Add local compute, shared storage, backup, or hybrid routing only when the work proves they are useful.</p>
+        <div class="button-row"><a class="button primary" href="/pilot-access">Request Pilot Access</a><a href="/how-it-works" style="color:var(--accent);font-weight:600;align-self:center">See how the Pilot works</a></div>
+        <div class="hiw-assurance" aria-label="Deployment assurances">
+          <span>No hardware required to begin</span><span>Customer-approved sources and access</span><span>Written recommendation before equipment quote</span><span>Evidence before expansion</span>
+        </div>
+      </div>
+      <div class="sol-hero-img-wrap">
+        <img src="/assets/card-practical-ai.webp" alt="Small creative team working with a controlled AI Workspace" loading="eager" style="width:100%;border-radius:var(--radius-lg);display:block">
+      </div>
+    </div>
+  </section>
 
-  <div class="feature-split"><img class="feature-image" src="/assets/network.webp" alt="Network equipment connecting a business workspace"><div><p class="eyebrow">The design principle</p><h2>PCs think and do. Storage protects and shares.</h2><p>A GPU workstation handles local AI compute. A NAS does a different job: it gives the team a durable, permissioned, recoverable source of files.</p><ul class="plain-list"><li>AI PC: models, retrieval, transcription, and automation</li><li>NAS: project files, permissions, snapshots, and sharing</li><li>Cloud: complex or occasional tasks that need current large models</li></ul></div></div>
+  <!-- 2. Three practical paths after a Pilot -->
+  <section class="section" id="systems" aria-labelledby="sol-paths-title" style="margin-top:64px">
+    <div class="section-heading"><div><p class="eyebrow">AFTER A PILOT</p><h2 id="sol-paths-title">There are three practical paths — not one default package.</h2></div><p>The Pilot shows what the workflow actually needs. The next step may be cloud-only, local or hybrid controls, or additional continuity infrastructure. Hardware is one possible outcome — not the starting assumption.</p></div>
+    <div class="sol-paths-grid">
+      <article class="sol-path-card"><p class="eyebrow">PATH 01</p><h3>Continue in the cloud</h3><p>Keep the proven workflow in a dedicated cloud workspace when it remains the simplest practical option for the team.</p><p class="sol-path-when">Best when one workflow, a small team, and approved cloud use are enough.</p></article>
+      <article class="sol-path-card"><p class="eyebrow">PATH 02</p><h3>Add local or hybrid controls</h3><p>Keep selected files, workflows, or AI capability closer to the office while using cloud models only where they add value.</p><p class="sol-path-when">Consider when file size, data location, shared access, or workflow needs make local controls useful.</p></article>
+      <article class="sol-path-card"><p class="eyebrow">PATH 03</p><h3>Add continuity infrastructure</h3><p>Add shared storage, protected backup, and recovery planning when one device or one failed drive can disrupt the team's work.</p><p class="sol-path-when">Consider when shared project data, recovery needs, or delivery schedules make continuity important.</p></article>
+    </div>
+    <p class="ws-fine" style="margin-top:20px">A Pilot can also show that the existing tools are enough for now. Expanding is a decision — not an obligation.</p>
+  </section>
 
-  <section class="section shell" aria-labelledby="solutions-cards-title">
-<div class="section-heading"><div><p class="eyebrow">THE WORKSPACE AND ITS FOUNDATION</p><h2 id="solutions-cards-title">Start with the workflow. Add the IT foundation only when it helps.</h2></div></div>
-<div class="solution-cards">
-<article class="solution-card"><img src="/assets/card-practical-ai.webp" alt="Small team using a controlled AI Workspace" loading="lazy"><div><span class="solution-number">01</span><h3>Practical AI Workspace</h3><p>Connect AI to approved files and real workflows. Local or cloud tools are selected by the job—not by a hardware sales pitch.</p></div></article>
-<article class="solution-card"><img src="/assets/card-studio-network.webp" alt="Small office network rack with NAS and switch" loading="lazy"><div><span class="solution-number">02</span><h3>Studio Network &amp; Shared Storage</h3><p>Fast, permissioned shared storage and a network that keeps large project files moving for a small team.</p></div></article>
-<article class="solution-card"><img src="/assets/card-backup-recovery.webp" alt="Backup and recovery diagram showing cloud copy and restore" loading="lazy"><div><span class="solution-number">03</span><h3>Backup &amp; Recovery Systems</h3><p>Protected copies with tested recovery—so a failed drive or a bad day doesn't become a lost project.</p></div></article>
-</div>
-</section>
+  <!-- 3. What stays under your control -->
+  <section class="section" aria-labelledby="sol-control-title" style="margin-top:64px">
+    <div class="section-heading"><div><p class="eyebrow">WHAT STAYS UNDER YOUR CONTROL</p><h2 id="sol-control-title">The recommendation follows your boundaries — not a hardware sales target.</h2></div><p>Before a broader deployment, the team should know what information is connected, who can use it, which AI routes are allowed, and what still needs a person to decide.</p></div>
+    <div class="sol-control-list">
+      <div class="sol-control-item"><strong>Approved sources</strong><p>Only the files, procedures, and templates chosen for the workflow are connected.</p></div>
+      <div class="sol-control-item"><strong>Roles and access</strong><p>The team decides who can use which sources and actions.</p></div>
+      <div class="sol-control-item"><strong>Cloud and local boundaries</strong><p>Cloud use, local handling, and human review points are chosen by workflow.</p></div>
+      <div class="sol-control-item"><strong>Visible cost and review effort</strong><p>Model usage, exceptions, and the human time needed to check results remain part of the decision.</p></div>
+      <div class="sol-control-item"><strong>Written scope before equipment</strong><p>Hardware, installation, and support are quoted separately in writing only after a practical recommendation.</p></div>
+    </div>
+  </section>
 
-<section class="subsection" id="systems">
-    <div class="section-heading"><div><p class="eyebrow">Deployment</p><h2>Start where the workflow is today.</h2></div><p>Hardware is quoted separately after assessment. The recommendation can begin with one workstation and grow only when the team needs shared data or business continuity.</p></div>
+  <!-- 4. When a local foundation earns its place -->
+  <section class="section" aria-labelledby="sol-local-title" style="margin-top:64px">
+    <div class="section-heading"><div><p class="eyebrow">WHEN LOCAL ADDS REAL VALUE</p><h2 id="sol-local-title">Local systems are useful when the work needs them.</h2></div><p>A local foundation is not a replacement for every cloud tool. It becomes useful when the team needs faster access to large files, clearer control over shared sources, dependable recovery, or selected local AI capability.</p></div>
+    <div class="sol-local-grid">
+      <article class="sol-local-item"><strong>Local AI compute</strong><p>Useful for selected internal workflows, retrieval, transcription, or automation that benefit from local capability.</p></article>
+      <article class="sol-local-item"><strong>Shared storage</strong><p>Useful when a team needs one permissioned, recoverable place for active project files and approved sources.</p></article>
+      <article class="sol-local-item"><strong>Backup and recovery</strong><p>Useful when a failed drive, accidental deletion, or interrupted service can affect active work.</p></article>
+    </div>
+    <p class="ws-fine" style="margin-top:20px">A PC handles AI work. Shared storage protects and shares files. Cloud remains useful for selected complex or occasional tasks.</p>
+  </section>
+
+  <!-- 5. Deployment foundations, only when justified -->
+  <section class="section" aria-labelledby="sol-foundations-title" style="margin-top:64px">
+    <div class="section-heading"><div><p class="eyebrow">IF THE EVIDENCE JUSTIFIES IT</p><h2 id="sol-foundations-title">Add only the foundation the workflow actually needs.</h2></div><p>If a Pilot shows that local or hybrid deployment is useful, the system can grow in small, understandable steps. Each option is scoped and quoted separately after review.</p></div>
     <div class="tier-grid visual-tiers">
       <article>
-        <div class="tier-topline"><span class="tier-number">01</span><span class="tier-label">1–3 people · Start here</span></div>
-        <h3>AI Workstation Starter</h3>
-        <p class="tier-outcome">Prove useful local AI without buying a team storage system too early.</p>
+        <div class="tier-topline"><span class="tier-number">01</span><span class="tier-label">FOUNDATION 01</span></div>
+        <h3>Local AI Workstation</h3>
+        <p class="tier-sub">When one team needs local capability</p>
+        <p class="tier-outcome">Add a dedicated workstation when selected internal workflows benefit from local AI capability without requiring a shared storage system.</p>
         <div class="architecture-diagram" role="img" aria-label="Team connects directly to a GPU AI workstation with protected backup">
-          <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="20" r="5"/><path d="M6 39c1-8 5-12 11-12s10 4 11 12M28 29c6-2 12 2 14 10"/></svg><strong>1–3 people</strong></div><span class="diagram-line">→</span>
+          <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="20" r="5"/><path d="M6 39c1-8 5-12 11-12s10 4 11 12M28 29c6-2 12 2 14 10"/></svg><strong>Team</strong></div><span class="diagram-line">→</span>
           <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="7" width="29" height="23" rx="3"/><path d="M13 37h14M20 30v7M10 13h19M10 19h13"/><rect x="37" y="9" width="7" height="28" rx="1"/><circle cx="40.5" cy="31.5" r="1.5"/></svg><strong>GPU AI PC</strong><small>AI + fast local files</small></div><span class="diagram-line">→</span>
           <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 36h22a8 8 0 0 0 1-15.9A13 13 0 0 0 12.5 17 9.5 9.5 0 0 0 14 36Z"/><path d="M24 22v10M20 28l4 4 4-4"/></svg><strong>Backup</strong><small>External or cloud</small></div>
         </div>
-        <div class="best-for"><strong>Designed for</strong><span>Solo operators and small teams piloting document search, transcription, content, or routine admin.</span></div>
+        <div class="best-for"><strong>Consider when</strong><span>one workflow, one team, and selected local processing are enough.</span></div>
         <details><summary>View clear configuration</summary><div class="config-panel">
           <div><span>Compute</span><strong>1× GPU workstation</strong></div>
           <div><span>Data</span><strong>Local NVMe working set</strong></div>
           <div><span>Protection</span><strong>External or encrypted cloud backup</strong></div>
-          <div><span>Access</span><strong>1–3 named users</strong></div>
-          <p>Local models, knowledge base, two pilot workflows, backup setup, and team handoff. Exact GPU and storage size follow the assessment.</p>
+          <div><span>Access</span><strong>Named users</strong></div>
+          <p>Local models, knowledge base, pilot workflows, backup setup, and team handoff. Exact GPU and storage size follow the assessment.</p>
         </div></details>
-        <a class="button secondary" href="/booking">Book Onsite Service</a>
+        <a class="button primary" href="/pilot-access">Request Pilot Access</a>
       </article>
-      <article class="recommended">
-        <div class="tier-topline"><span class="tier-number">02</span><span class="tier-label">Shared setup · 3–10 people</span></div>
-        <h3>Shared AI Workspace</h3>
-        <p class="tier-outcome">Give AI the right team files while keeping sharing, backup, and permissions under control.</p>
+      <article>
+        <div class="tier-topline"><span class="tier-number">02</span><span class="tier-label">FOUNDATION 02</span></div>
+        <h3>Shared Files + AI Workspace</h3>
+        <p class="tier-sub">When team data needs clearer boundaries</p>
+        <p class="tier-outcome">Add shared storage and permissioned sources when multiple people need reliable access to active project files and approved knowledge.</p>
         <div class="architecture-diagram" role="img" aria-label="Team connects to a GPU AI workstation and shared network storage with protected backup">
-          <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="20" r="5"/><path d="M6 39c1-8 5-12 11-12s10 4 11 12M28 29c6-2 12 2 14 10"/></svg><strong>3–10 people</strong></div><span class="diagram-line">→</span>
+          <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="20" r="5"/><path d="M6 39c1-8 5-12 11-12s10 4 11 12M28 29c6-2 12 2 14 10"/></svg><strong>Team</strong></div><span class="diagram-line">→</span>
           <div class="diagram-stack">
             <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="7" width="29" height="23" rx="3"/><path d="M13 37h14M20 30v7M10 13h19M10 19h13"/><rect x="37" y="9" width="7" height="28" rx="1"/><circle cx="40.5" cy="31.5" r="1.5"/></svg><strong>GPU AI PC</strong><small>Models + agents</small></div>
             <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="8" width="34" height="13" rx="3"/><rect x="7" y="27" width="34" height="13" rx="3"/><circle cx="34" cy="14.5" r="2"/><circle cx="34" cy="33.5" r="2"/><path d="M13 14.5h12M13 33.5h12"/></svg><strong>NAS</strong><small>Files + permissions</small></div>
           </div><span class="diagram-line">→</span>
           <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5 40 11v11c0 10-6 17-16 21C14 39 8 32 8 22V11Z"/><path d="m17 24 5 5 10-11"/></svg><strong>Protected copy</strong><small>Cloud or offsite</small></div>
         </div>
-        <div class="best-for"><strong>Designed for</strong><span>Video, design, 3D, and marketing studios collaborating on large or sensitive project files.</span></div>
+        <div class="best-for"><strong>Consider when</strong><span>large files, shared projects, or access rules become part of the workflow.</span></div>
         <details><summary>View clear configuration</summary><div class="config-panel">
           <div><span>Compute</span><strong>1× GPU AI workstation</strong></div>
           <div><span>Data</span><strong>Team NAS + shared folders</strong></div>
@@ -82,14 +121,15 @@
           <div><span>Access</span><strong>Role-based permissions</strong></div>
           <p>Local AI, shared project structure, protected backup, network integration, and team training. This path separates shared data from AI compute for a growing team.</p>
         </div></details>
-        <a class="button primary" href="/booking">Book Onsite Service</a>
+        <a class="button primary" href="/pilot-access">Request Pilot Access</a>
       </article>
       <article>
-        <div class="tier-topline"><span class="tier-number">03</span><span class="tier-label">8–25 people · Cannot stop</span></div>
-        <h3>Private AI &amp; Business Continuity</h3>
-        <p class="tier-outcome">Separate AI compute from employee PCs and design the system around recovery and uptime.</p>
+        <div class="tier-topline"><span class="tier-number">03</span><span class="tier-label">FOUNDATION 03</span></div>
+        <h3>Local / Hybrid Workspace with Continuity</h3>
+        <p class="tier-sub">When recovery and uptime matter</p>
+        <p class="tier-outcome">Separate selected compute, shared storage, backup, and power protection when continuity requirements justify a more resilient environment.</p>
         <div class="architecture-diagram" role="img" aria-label="Team connects over high speed network to dedicated AI server and storage with backup, power protection and monitoring">
-          <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="20" r="5"/><path d="M6 39c1-8 5-12 11-12s10 4 11 12M28 29c6-2 12 2 14 10"/></svg><strong>8–25 people</strong></div><span class="diagram-line">→</span>
+          <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="17" r="6"/><circle cx="33" cy="20" r="5"/><path d="M6 39c1-8 5-12 11-12s10 4 11 12M28 29c6-2 12 2 14 10"/></svg><strong>Team</strong></div><span class="diagram-line">→</span>
           <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="9" r="5"/><circle cx="10" cy="37" r="5"/><circle cx="38" cy="37" r="5"/><path d="m21 13-8 19M27 13l8 19M15 37h18"/></svg><strong>10GbE</strong><small>High-speed network</small></div><span class="diagram-line">→</span>
           <div class="diagram-stack">
             <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="6" width="36" height="10" rx="2"/><rect x="6" y="19" width="36" height="10" rx="2"/><rect x="6" y="32" width="36" height="10" rx="2"/><path d="M12 11h2M12 24h2M12 37h2M20 11h15M20 24h15M20 37h15"/></svg><strong>AI Server</strong><small>Dedicated compute</small></div>
@@ -97,7 +137,7 @@
           </div><span class="diagram-line">→</span>
           <div class="diagram-node"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5 40 11v11c0 10-6 17-16 21C14 39 8 32 8 22V11Z"/><path d="m17 24 5 5 10-11"/></svg><strong>Continuity</strong><small>Backup + UPS</small></div>
         </div>
-        <div class="best-for"><strong>Designed for</strong><span>Teams whose delivery schedule, client data, or large media library cannot depend on one device.</span></div>
+        <div class="best-for"><strong>Consider when</strong><span>a failed device, lost project data, or interruption would materially affect delivery.</span></div>
         <details><summary>View clear configuration</summary><div class="config-panel">
           <div><span>Compute</span><strong>Dedicated GPU AI server</strong></div>
           <div><span>Data</span><strong>10GbE primary NAS</strong></div>
@@ -105,38 +145,32 @@
           <div><span>Continuity</span><strong>UPS + monitoring + recovery test</strong></div>
           <p>Dedicated services, high-speed shared storage, protected replicas, remote management, documented recovery, and ongoing care.</p>
         </div></details>
-        <a class="button secondary" href="/booking">Book Onsite Service</a>
+        <a class="button primary" href="/pilot-access">Request Pilot Access</a>
       </article>
     </div>
-    <div class="tier-compare" aria-label="Quick solution comparison">
-      <div><span>Starter</span><strong>AI first</strong><small>Single-workstation setup</small></div>
-      <div class="featured"><span>Shared</span><strong>AI + team data</strong><small>Shared compute and storage</small></div>
-      <div><span>Continuity</span><strong>AI + uptime</strong><small>Added backup and power protection</small></div>
-    </div>
+    <p class="ws-fine" style="margin-top:20px">Already have a network, storage, backup, or access issue? <a href="/booking" style="color:var(--accent)">Book an onsite service.</a></p>
   </section>
 
-  <section class="subsection">
-    <div class="section-heading"><div><p class="eyebrow">Workflow packs</p><h2>Make one daily workflow work first.</h2></div><p>No generic prompt course. Each pilot defines the input, a repeatable template, the person who reviews it, and where the approved result belongs.</p></div>
+  <!-- 6. Pilot examples -->
+  <section class="section" aria-labelledby="sol-examples-title" style="margin-top:64px">
+    <div class="section-heading"><div><p class="eyebrow">PILOT EXAMPLES</p><h2 id="sol-examples-title">Start with work the team already repeats.</h2></div><p>A Pilot does not begin with a prompt library. It begins with one repeatable task, approved inputs, a responsible reviewer, and a clear place for the result.</p></div>
     <div class="workflow-grid">
-      <article><span>01</span><h3>Project intake &amp; brief</h3><p>Turn meeting notes, client messages, and a project brief into a summary, action list, and risks.</p><strong>Control:</strong><p>The project lead reviews before anything is saved. AI does not contact the client.</p></article>
-      <article><span>02</span><h3>Proposal draft</h3><p>Use a fixed intake form to create a first draft and a list of questions about scope, timing, and assumptions.</p><strong>Control:</strong><p>A responsible person verifies pricing, commitments, and terms before sending.</p></article>
-      <article><span>03</span><h3>Internal knowledge search</h3><p>Search only approved SOPs, product information, and prior project templates.</p><strong>Control:</strong><p>Answers cite the source file or location and send uncertain items to a person.</p></article>
+      <article><span>01</span><h3>Project intake and client update</h3><p>Turn approved meeting notes, messages, and project files into a draft summary, action list, and client update. A project lead reviews before anything is saved or sent.</p></article>
+      <article><span>02</span><h3>Proposal preparation</h3><p>Use approved templates and intake information to prepare a first draft and identify missing scope, timing, or assumptions. A responsible person verifies pricing, commitments, and terms before sending.</p></article>
+      <article><span>03</span><h3>Internal knowledge search</h3><p>Search only approved procedures, product information, and past templates. Answers point to their source, and uncertain items are sent to a person for review.</p></article>
     </div>
   </section>
 
-  <section class="subsection boundary-block">
-    <div><p class="eyebrow">Safe by design</p><h2>AI gets boundaries, not blanket access.</h2></div>
-    <p>Agents begin with read-only access to explicitly approved information. Writing files, sending messages, changing orders, or publishing content requires human confirmation. Fully offline is an option only when it fits the actual risk and workflow.</p>
+  <!-- 7. Final CTA -->
+  <section class="section shell final-cta" style="margin-top:72px" aria-labelledby="sol-cta-title">
+    <p class="eyebrow">START WITH THE WORK, NOT THE HARDWARE</p>
+    <h2 id="sol-cta-title">See whether a controlled AI Workspace fits your team.</h2>
+    <p>Tell us about one repeated task. We will help identify the smallest practical Pilot boundary before recommending cloud, local, hybrid, storage, or continuity infrastructure.</p>
+    <div class="button-row"><a class="button primary" href="/pilot-access">Request Pilot Access</a></div>
+    <p style="margin-top:16px"><a href="/booking" style="color:var(--dim);text-decoration:underline">Need onsite IT help instead? Book Onsite Service</a></p>
+    <p class="ws-fine" style="margin-top:12px">No company-wide rollout or hardware purchase is required to begin.</p>
   </section>
 
-  <section class="subsection">
-    <div class="section-heading"><div><p class="eyebrow">Ongoing care</p><h2>Support that remembers your setup.</h2></div><p>Final monthly price, included time, device counts, and response targets are confirmed in writing.</p></div>
-    <div class="care-grid">
-      <article><h3>Remote Care</h3><p>Remote technical support, system health review, and a monthly support summary.</p><strong>Custom monthly quote</strong></article>
-      <article><h3>Business Complete</h3><p>Remote continuity, planned onsite time, preventive review, and priority response.</p><strong>Custom monthly quote</strong></article>
-      <article><h3>AI Studio Care</h3><p>Workstation maintenance, driver and model updates, workflow support, and optimization reviews.</p><strong>Custom monthly quote</strong></article>
-    </div>
-  </section>
 </main>
 
 <footer>
