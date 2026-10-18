@@ -36,7 +36,8 @@
     <p><label for="f-workflow">Which workflow should the pilot start with? *</label><br><textarea id="f-workflow" name="workflow" required minlength="20" placeholder="e.g. Every week we turn project notes into client status updates. Two people draft, one reviews. Takes about 6 hours total." style="width:100%;padding:10px;border:1px solid #d4dce5;border-radius:8px;min-height:96px"></textarea><br><small style="color:#52657b">Please describe the workflow at a high level. Do not include client files, passwords, account details, or confidential information.</small></p>
     <p><label for="f-tools">What AI tools does your team already use?</label><br><input id="f-tools" name="currentAITools" placeholder="e.g. ChatGPT, Copilot, Claude, none yet" style="width:100%;padding:10px;border:1px solid #d4dce5;border-radius:8px"></p>
     <p><label for="f-time">Preferred time for a call</label><br><input id="f-time" name="preferredTime" placeholder="e.g. weekday afternoons, or Thursday after 2pm" style="width:100%;padding:10px;border:1px solid #d4dce5;border-radius:8px"></p>
-    <p><button class="button primary" type="submit">Request Pilot Access</button></p>
+    <p><button class="button primary" type="submit">Request Pilot Access</button>
+<p style="margin-top:12px;font-size:.85rem;color:var(--dim)">By submitting this request, you agree that Sunofla may use the information to respond to your Pilot inquiry. Please review our <a href="/privacy" style="color:var(--accent)">Privacy Policy</a>.</p></p>
     <p id="pilot-msg" role="status" style="display:none"></p>
   </form>
 
@@ -54,10 +55,10 @@
 <footer>
   <div class="shell footer-grid">
     <div><strong>SUNOFLA</strong><p>Controlled AI Workspace for Orange County small teams.</p></div>
-    <div class="footer-nav"><a href="/workspace">AI Workspace</a><a href="/how-it-works">How It Works</a><a href="/solutions#systems">Deployment</a><a href="/onsite-it/how-it-works">IT Foundation</a><a href="/industries">Industries</a><a href="/about">About</a></div>
-    <div class="footer-secondary"><a href="/pilot-access">Request Pilot Access</a><a href="/booking">Book Onsite Service</a></div>
+    <div><strong>Workspace</strong><div class="footer-nav"><a href="/workspace">AI Workspace</a><a href="/how-it-works">How It Works</a><a href="/pilot-access">Request Pilot Access</a></div></div>
+    <div><strong>Services</strong><div class="footer-nav"><a href="/solutions#systems">Deployment</a><a href="/onsite-it/how-it-works">IT Foundation</a><a href="/booking">Book Onsite Service</a></div></div>
+    <div><strong>Company</strong><div class="footer-nav"><a href="/industries">Industries</a><a href="/about">About</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div></div>
   </div>
-  <p class="shell image-sources">Image sources: Relistr · Retailer · Redway Networks · Starting Block · TrouDigital</p>
 </footer>
 </div>
 <script>

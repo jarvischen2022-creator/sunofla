@@ -26,6 +26,8 @@ route_map = {
  'booking.html': '/booking',
  'industries.html': '/industries',
  'about.html': '/about',
+ 'terms.html': '/terms',
+ 'privacy.html': '/privacy',
 }
 
 entries = ""
