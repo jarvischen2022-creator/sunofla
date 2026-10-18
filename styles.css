@@ -927,3 +927,27 @@ a.journey-action { margin-top: auto; padding: 16px 0 3px; display: flex; align-i
 @media (max-width: 500px) {
   .hiw-leave-grid { grid-template-columns: 1fr; }
 }
+
+/* Pilot triage form */
+.pilot-form { max-width: 720px; }
+.pilot-availability { color: var(--dim); font-size: .92rem; margin-top: 8px; }
+.pf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.pf-row-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+.pf-field { margin: 0 0 16px; min-width: 0; }
+.pf-field label { display: block; font-weight: 600; margin-bottom: 6px; font-size: .92rem; }
+.pf-field input, .pf-field select, .pf-field textarea { width: 100%; padding: 10px; border: 1px solid #d4dce5; border-radius: 8px; font-size: .95rem; box-sizing: border-box; }
+.pf-field textarea { min-height: 110px; resize: vertical; }
+.pf-field small { display: block; margin-top: 6px; color: #52657b; font-size: .85rem; }
+.pf-full { grid-column: 1 / -1; }
+.pf-section-title { font-size: 1.05rem; margin: 28px 0 4px; }
+.pf-section-note { color: var(--dim); font-size: .88rem; margin: 0 0 16px; }
+.pf-concerns { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 8px; }
+.pf-check { display: flex; align-items: flex-start; gap: 10px; padding: 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: .9rem; }
+.pf-check input { margin-top: 3px; accent-color: var(--accent); }
+.pf-check span { line-height: 1.4; }
+.pf-hint { color: #b45309; font-size: .88rem; margin: 4px 0 12px; }
+.pf-privacy { margin-top: 12px; font-size: .85rem; color: var(--dim); }
+.pf-privacy a { color: var(--accent); }
+@media (max-width: 700px) {
+  .pf-row, .pf-row-3, .pf-concerns { grid-template-columns: 1fr; }
+}

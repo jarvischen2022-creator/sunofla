@@ -23,34 +23,96 @@
 </header>
 
 <main class="page shell">
-  <p class="eyebrow">Pilot Access</p>
+  <p class="eyebrow">PILOT ACCESS</p>
   <h1>Request Pilot Access.</h1>
-  <p class="page-intro">Start with one repeated, document-heavy task your team already does. We&rsquo;ll configure the Workspace around it — permissions, approved sources, and human review — then run a 2–4 week pilot on real work.</p>
+  <p class="page-intro">Start with one repeated, document-heavy task your team already does. Tell us enough to understand the workflow, the boundaries that matter, and whether a guided Pilot is a practical fit.</p>
+  <p class="pilot-availability">Pilot availability is limited. We review each request before confirming a practical scope, timeline, and next step.</p>
 
-  <div class="section-heading" style="margin-top:56px"><div><p class="eyebrow">Tell us about your pilot</p><h2>We&rsquo;ll follow up with next steps.</h2></div><p>Fields marked * are required so we can actually reach you.</p></div>
+  <div class="section-heading" style="margin-top:48px"><div><p class="eyebrow">Tell us about your pilot</p><h2>We&rsquo;ll follow up with next steps.</h2></div><p>Fields marked * are required so we can actually reach you.</p></div>
 
-  <form id="pilot-form" novalidate style="max-width:640px">
-    <p><label for="f-name">Your name *</label><br><input id="f-name" name="name" required placeholder="e.g. Jordan Lee" autocomplete="name" style="width:100%;padding:10px;border:1px solid #d4dce5;border-radius:8px"></p>
-    <p><label for="f-email">Work email *</label><br><input id="f-email" name="email" type="email" required placeholder="you@company.com" autocomplete="email" style="width:100%;padding:10px;border:1px solid #d4dce5;border-radius:8px"></p>
-    <p><label for="f-phone">Phone</label><br><input id="f-phone" name="phone" type="tel" placeholder="(949) 555-0100" autocomplete="tel" style="width:100%;padding:10px;border:1px solid #d4dce5;border-radius:8px"></p>
-    <p><label for="f-workflow">Which workflow should the pilot start with? *</label><br><textarea id="f-workflow" name="workflow" required minlength="20" placeholder="e.g. Every week we turn project notes into client status updates. Two people draft, one reviews. Takes about 6 hours total." style="width:100%;padding:10px;border:1px solid #d4dce5;border-radius:8px;min-height:96px"></textarea><br><small style="color:#52657b">Please describe the workflow at a high level. Do not include client files, passwords, account details, or confidential information.</small></p>
-    <p><label for="f-tools">What AI tools does your team already use?</label><br><input id="f-tools" name="currentAITools" placeholder="e.g. ChatGPT, Copilot, Claude, none yet" style="width:100%;padding:10px;border:1px solid #d4dce5;border-radius:8px"></p>
-    <p><label for="f-time">Preferred time for a call</label><br><input id="f-time" name="preferredTime" placeholder="e.g. weekday afternoons, or Thursday after 2pm" style="width:100%;padding:10px;border:1px solid #d4dce5;border-radius:8px"></p>
+  <form id="pilot-form" novalidate class="pilot-form">
+    <!-- A. Contact -->
+    <div class="pf-row">
+      <p class="pf-field"><label for="f-name">Your name *</label><input id="f-name" name="name" required placeholder="e.g. Jordan Lee" autocomplete="name"></p>
+      <p class="pf-field"><label for="f-email">Work email *</label><input id="f-email" name="email" type="email" required placeholder="you@company.com" autocomplete="email"></p>
+    </div>
+    <div class="pf-row">
+      <p class="pf-field"><label for="f-organization">Company or organization</label><input id="f-organization" name="organization" placeholder="e.g. Acme Studio" autocomplete="organization"></p>
+      <p class="pf-field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" placeholder="(949) 555-0100" autocomplete="tel"></p>
+    </div>
+
+    <!-- B. Team context -->
+    <h3 class="pf-section-title">A little context</h3>
+    <p class="pf-section-note">These optional details help us prepare a more useful first conversation.</p>
+    <div class="pf-row pf-row-3">
+      <p class="pf-field"><label for="f-industry">Your industry</label>
+        <select id="f-industry" name="industry">
+          <option value="">Select an industry (optional)</option>
+          <option value="creative_studio">Design, 3D, architecture, or creative studio</option>
+          <option value="content_production">Video, content, marketing, or production team</option>
+          <option value="professional_services">Professional services — consulting, insurance, or real estate</option>
+          <option value="small_office">Dental or other small office</option>
+          <option value="retail_operations">Retail, showroom, or multi-location operations</option>
+          <option value="other_small_business">Other small business</option>
+          <option value="not_sure_yet">Not sure yet</option>
+        </select></p>
+      <p class="pf-field"><label for="f-team-size">Approximate team size</label>
+        <select id="f-team-size" name="teamSize">
+          <option value="">Select a range (optional)</option>
+          <option value="1_5">1–5 people</option>
+          <option value="6_15">6–15 people</option>
+          <option value="16_25">16–25 people</option>
+          <option value="26_50">26–50 people</option>
+          <option value="51_plus">51+ people</option>
+          <option value="not_sure">Not sure</option>
+        </select></p>
+      <p class="pf-field"><label for="f-ai-use">How is your team using AI today?</label>
+        <select id="f-ai-use" name="currentAiUse">
+          <option value="">Select the closest answer (optional)</option>
+          <option value="no_regular_ai">No regular AI use yet</option>
+          <option value="individual_accounts">Individual employee AI accounts</option>
+          <option value="shared_company_account">A shared company AI account</option>
+          <option value="several_tools_no_rules">Several tools, but no shared rules</option>
+          <option value="not_sure">Not sure</option>
+        </select></p>
+    </div>
+
+    <!-- C. Primary concerns -->
+    <h3 class="pf-section-title">What matters most right now?</h3>
+    <p class="pf-section-note">Choose up to two. This helps us prepare the first conversation — it does not decide whether you qualify.</p>
+    <div class="pf-concerns" role="group" aria-label="Primary concerns, choose up to two">
+      <label class="pf-check"><input type="checkbox" name="primaryConcerns" value="finding_approved_files"><span>Finding and reusing approved files</span></label>
+      <label class="pf-check"><input type="checkbox" name="primaryConcerns" value="preparing_client_updates"><span>Preparing client updates, proposals, or reports</span></label>
+      <label class="pf-check"><input type="checkbox" name="primaryConcerns" value="controlled_team_ai_access"><span>Giving the team one controlled way to use AI</span></label>
+      <label class="pf-check"><input type="checkbox" name="primaryConcerns" value="protecting_sensitive_information"><span>Keeping sensitive information out of public AI tools</span></label>
+      <label class="pf-check"><input type="checkbox" name="primaryConcerns" value="controlling_ai_cost"><span>Understanding and controlling AI cost</span></label>
+      <label class="pf-check"><input type="checkbox" name="primaryConcerns" value="reducing_manual_review"><span>Reducing manual review and follow-up work</span></label>
+      <label class="pf-check"><input type="checkbox" name="primaryConcerns" value="other"><span>Other</span></label>
+    </div>
+    <p id="pf-concern-msg" class="pf-hint" role="status" style="display:none">Choose up to two priorities.</p>
+
+    <!-- D. Workflow -->
+    <p class="pf-field pf-full"><label for="f-workflow">Which workflow should the pilot start with? *</label>
+      <textarea id="f-workflow" name="workflow" required minlength="20" placeholder="Example: Our project managers search approved project folders and prepare a weekly client update. A manager must review it before it is sent."></textarea>
+      <small>Describe the workflow at a high level. Do not include client names, files, passwords, account details, or confidential information.</small></p>
+
+    <!-- E. Preferred time -->
+    <p class="pf-field"><label for="f-time">Preferred time for a call</label><input id="f-time" name="preferredTime" placeholder="e.g. weekday afternoons, or Thursday after 2pm"></p>
+
     <p><button class="button primary" type="submit">Request Pilot Access</button>
-<p style="margin-top:12px;font-size:.85rem;color:var(--dim)">By submitting this request, you agree that Sunofla may use the information to respond to your Pilot inquiry. Please review our <a href="/privacy" style="color:var(--accent)">Privacy Policy</a>.</p></p>
+    <p class="pf-privacy">By submitting this request, you agree that Sunofla may use the information to respond to your Pilot inquiry. Please review our <a href="/privacy">Privacy Policy</a>.</p></p>
     <p id="pilot-msg" role="status" style="display:none"></p>
   </form>
 
-
-<div class="section-heading" style="margin-top:48px"><div><p class="eyebrow">What happens after you request</p><h2>Four steps, no surprises.</h2></div></div>
+  <div class="section-heading" style="margin-top:48px"><div><p class="eyebrow">What happens after you request</p><h2>Four steps, no surprises.</h2></div></div>
   <div class="values-grid">
-    <article><h3>1. Choose a workflow</h3><p>We pick one repeated, document-heavy task your team already does — the pilot starts there, not with a company-wide rollout.</p></article>
-    <article><h3>2. Set the rules</h3><p>Together we configure who can access what, which sources are approved, and what needs a human review.</p></article>
-    <article><h3>3. Run the pilot</h3><p>Your team uses Sunofla AI Workspace on real work for 2–4 weeks, with permissions, data-protection checks, and visible AI spending from day one.</p></article>
-    <article><h3>4. Review the evidence</h3><p>You see what was controlled, what it cost, and what changed — then decide whether to expand, with the numbers in front of you.</p></article>
+    <article><h3>1. Review the workflow</h3><p>We review the repeated task, the information involved, and the main problem your team wants to solve.</p></article>
+    <article><h3>2. Clarify the boundaries</h3><p>If there is a fit, we clarify approved sources, user roles, data boundaries, AI routes, and where human review is needed.</p></article>
+    <article><h3>3. Confirm a practical Pilot</h3><p>If a Pilot is appropriate and capacity is available, we confirm the scope, timeline, and the smallest practical way to begin.</p></article>
+    <article><h3>4. Review evidence before expanding</h3><p>The team reviews quality, exceptions, model usage, cost, and review effort before deciding whether to continue, adjust, expand, or stop.</p></article>
   </div>
 
-  </main>
+</main>
 
 <footer>
   <div class="shell footer-grid">
@@ -63,20 +125,36 @@
 </div>
 <script>
 document.querySelector('.menu-button').addEventListener('click',function(){var n=document.querySelector('.nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false');});
+/* Limit primaryConcerns to 2 */
+(function(){
+  var boxes=document.querySelectorAll('input[name="primaryConcerns"]');
+  var msg=document.getElementById('pf-concern-msg');
+  boxes.forEach(function(b){
+    b.addEventListener('change',function(){
+      var checked=document.querySelectorAll('input[name="primaryConcerns"]:checked');
+      if(checked.length>2){ this.checked=false; msg.style.display='block'; }
+      else if(checked.length<=2){ msg.style.display='none'; }
+    });
+  });
+})();
 /* Pilot request via FormSubmit AJAX. */
 document.getElementById('pilot-form').addEventListener('submit',function(e){
   e.preventDefault();
   var form=e.target, msg=document.getElementById('pilot-msg');
   if(!form.checkValidity()){ form.reportValidity(); return; }
+  var fd=new FormData(form);
   var data={};
-  new FormData(form).forEach(function(v,k){ data[k]=v; });
+  fd.forEach(function(v,k){ if(k!=='primaryConcerns') data[k]=v; });
+  var concerns=fd.getAll('primaryConcerns');
+  var labelMap={finding_approved_files:'Finding and reusing approved files',preparing_client_updates:'Preparing client updates, proposals, or reports',controlled_team_ai_access:'Giving the team one controlled way to use AI',protecting_sensitive_information:'Keeping sensitive information out of public AI tools',controlling_ai_cost:'Understanding and controlling AI cost',reducing_manual_review:'Reducing manual review and follow-up work',other:'Other'};
+  if(concerns.length){ data.primaryConcerns=concerns.map(function(c){return labelMap[c]||c;}).join(' | '); }
   data._subject='Sunofla Pilot Access Request';
   msg.style.display='block'; msg.textContent='Sending…';
   fetch('https://formsubmit.co/ajax/support@sunofla.com',{
     method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
     body:JSON.stringify(data)
   }).then(function(r){ return r.json(); }).then(function(){
-    msg.textContent='Thanks — your request is in. We\u2019ll follow up with next steps.';
+    msg.textContent='Thanks — your request is in. We\u2019ll review the workflow and follow up with the most practical next step.';
     form.reset();
   }).catch(function(){
     msg.textContent='Something went wrong. Please text (949) 678-9220 and we\u2019ll take it from there.';
