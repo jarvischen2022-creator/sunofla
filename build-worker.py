@@ -1,1 +1,102 @@
-IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJSZWJ1aWxkIHRoZSBmdWxsIHN1bm9mbGEgd29ya2VyIEpTIGZyb20gSFRNTCBzb3VyY2VzIGluIHYyL3NpbmdsZS8uIiIiCmltcG9ydCByZSwgZ2xvYiwgb3MKCkRJUiA9ICIvaG9tZS9oYXRjaC93b3Jrc3BhY2UvY2xvdWRmbGFyZS1kZXBsb3kvdjIvc2luZ2xlLyIKT1VUID0gIi90bXAvc3Vub2ZsYS13b3JrZXItcmVzdHJ1Y3R1cmUuanMiCgpkZWYgbWluaWZ5KGh0bWwpOgogICAgaHRtbCA9IHJlLnN1YihyJzwhLS0oPyFcW2lmKS4qPy0tPicsICcnLCBodG1sLCBmbGFncz1yZS5TKQogICAgaHRtbCA9IHJlLnN1YihyJz5ccys8JywgJz48JywgaHRtbCkKICAgIGh0bWwgPSByZS5zdWIocidcc3syLH0nLCAnICcsIGh0bWwpCiAgICBodG1sID0gcmUuc3ViKHInXG5ccyonLCAnJywgaHRtbCkKICAgIHJldHVybiBodG1sLnN0cmlwKCkKCmRlZiBqc19lbnRyeShyb3V0ZSwgY29udGVudCk6CiAgICBlc2MgPSBjb250ZW50LnJlcGxhY2UoJ1xcJywgJ1xcXFwnKS5yZXBsYWNlKCdgJywgJ1xcYCcpLnJlcGxhY2UoJyR7JywgJ1xcJHsnKQogICAgcmV0dXJuIGYiICAne3JvdXRlfSc6IGB7ZXNjfWAsXG4iCgpyb3V0ZV9tYXAgPSB7CiAnaW5kZXguaHRtbCc6ICcvJywgJ2Fib3V0Lmh0bWwnOiAnL2Fib3V0JywgJ2FpLWFyY2hpdGVjdHVyZS5odG1sJzogJy9haS1hcmNoaXRlY3R1cmUnLAogJ2FpLXdoeS5odG1sJzogJy9haS13aHknLCAnYm9va2luZy5odG1sJzogJy9ib29raW5nJywgJ2hvdy1pdC13b3Jrcy5odG1sJzogJy9ob3ctaXQtd29ya3MnLAogJ3dvcmtzcGFjZS5odG1sJzogJy93b3Jrc3BhY2UnLCAncGlsb3QtYWNjZXNzLmh0bWwnOiAnL3BpbG90LWFjY2VzcycsCiAnb25zaXRlLWl0LWhvdy1pdC13b3Jrcy5odG1sJzogJy9vbnNpdGUtaXQvaG93LWl0LXdvcmtzJywKICdpbmR1c3RyaWVzLmh0bWwnOiAnL2luZHVzdHJpZXMnLCAncHJpdmFjeS5odG1sJzogJy9wcml2YWN5JywgJ3NvbHV0aW9ucy5odG1sJzogJy9zb2x1dGlvbnMnLAogJ3Rlcm1zLmh0bWwnOiAnL3Rlcm1zJywKfQpmb3Igc2wgaW4gWyJsZWdhbCIsICJhY2NvdW50aW5nLXRheCIsICJyZWFsLWVzdGF0ZSIsICJpbnN1cmFuY2UtZmluYW5jZSIsICJoZWFsdGhjYXJlLWFkbWluIiwKICAgICAgICAgICAiY29uc3RydWN0aW9uLWVuZ2luZWVyaW5nIiwgImxvZ2lzdGljcy1zdXBwbHktY2hhaW4iLCAicHJvZmVzc2lvbmFsLWNvbnN1bHRpbmciXToKICAgIHJvdXRlX21hcFtmJ2luZHVzdHJpZXMte3NsfS5odG1sJ10gPSBmJy9pbmR1c3RyaWVzL3tzbH0nCgplbnRyaWVzID0gIiIKZm9yIGZuLCByb3V0ZSBpbiByb3V0ZV9tYXAuaXRlbXMoKToKICAgIHAgPSBESVIgKyBmbgogICAgYXNzZXJ0IG9zLnBhdGguZXhpc3RzKHApLCBmIm1pc3Npbmcge2ZufSIKICAgIGVudHJpZXMgKz0ganNfZW50cnkocm91dGUsIG1pbmlmeShvcGVuKHApLnJlYWQoKSkpCgojIHNoYXJlZCBjc3MgYXNzZXQKY3NzID0gb3BlbihESVIgKyAiYXNzZXRzLXNpdGUuY3NzIikucmVhZCgpCmVudHJpZXMgKz0ganNfZW50cnkoJy9hc3NldHMvc2l0ZS5jc3MnLCBjc3MpCgojIG9sZCBzdHlsZXMuY3NzIChPY3QgOSBVSSwgdXNlZCBieSByZWJ1aWx0IGluZGV4L3NvbHV0aW9ucykKaW1wb3J0IG9zIGFzIF9vcwpfb2xkX2NzcyA9IERJUiArICJzdHlsZXMuY3NzIgppZiBfb3MucGF0aC5leGlzdHMoX29sZF9jc3MpOgogICAgZW50cmllcyArPSBqc19lbnRyeSgnL3N0eWxlcy5jc3MnLCBvcGVuKF9vbGRfY3NzKS5yZWFkKCkpCgojIHNpdGVtYXAKdXJscyA9IFsiIl0gKyBbciBmb3IgciBpbiBzb3J0ZWQocm91dGVfbWFwLnZhbHVlcygpKSBpZiByICE9ICIvIl0Kc2l0ZW1hcCA9ICc8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PlxuPHVybHNldCB4bWxucz0iaHR0cDovL3d3dy5zaXRlbWFwcy5vcmcvc2NoZW1hcy9zaXRlbWFwLzAuOSI+XG4nICsgXAogICAgIiIuam9pbihmJyAgPHVybD48bG9jPmh0dHBzOi8vc3Vub2ZsYS5jb217dSBpZiB1IGVsc2UgIi8ifTwvbG9jPjwvdXJsPlxuJyBmb3IgdSBpbiB1cmxzKSArICc8L3VybHNldD5cbicKZW50cmllcyArPSBqc19lbnRyeSgnL3NpdGVtYXAueG1sJywgc2l0ZW1hcCkKCndvcmtlciA9ICIiInZhciBQQUdFUyA9IHsKIiIiICsgZW50cmllcyArICIiIn07CgphZGRFdmVudExpc3RlbmVyKCdmZXRjaCcsIGZ1bmN0aW9uKGV2ZW50KSB7CiAgZXZlbnQucmVzcG9uZFdpdGgoaGFuZGxlUmVxdWVzdChldmVudC5yZXF1ZXN0KSk7Cn0pOwphc3luYyBmdW5jdGlvbiBoYW5kbGVSZXF1ZXN0KHJlcXVlc3QpIHsKICB2YXIgdXJsID0gbmV3IFVSTChyZXF1ZXN0LnVybCk7CiAgdmFyIHBhdGggPSB1cmwucGF0aG5hbWU7CiAgaWYgKHBhdGgubGVuZ3RoID4gMSAmJiBwYXRoLmVuZHNXaXRoKCcvJykpIHBhdGggPSBwYXRoLnNsaWNlKDAsIC0xKTsKICBpZiAocGF0aC5lbmRzV2l0aCgnLmh0bWwnKSkgcGF0aCA9IHBhdGguc2xpY2UoMCwgLTUpOwogIGlmIChwYXRoID09PSAnL2luZGV4JykgcGF0aCA9ICcvJzsKICB2YXIgaHRtbCA9IFBBR0VTW3BhdGhdOwogIGlmIChodG1sKSB7CiAgICB2YXIgY3QgPSBwYXRoID09PSAnL3NpdGVtYXAueG1sJyA/ICdhcHBsaWNhdGlvbi94bWw7IGNoYXJzZXQ9dXRmLTgnIDogKHBhdGggPT09ICcvYXNzZXRzL3NpdGUuY3NzJyA/ICd0ZXh0L2NzczsgY2hhcnNldD11dGYtOCcgOiAndGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Jyk7CiAgICByZXR1cm4gbmV3IFJlc3BvbnNlKGh0bWwsIHsgaGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogY3QsICdDYWNoZS1Db250cm9sJzogJ3B1YmxpYywgbWF4LWFnZT0zMDAnIH0gfSk7CiAgfQogIHJldHVybiBuZXcgUmVzcG9uc2UoJ05vdCBmb3VuZCcsIHsgc3RhdHVzOiA0MDQgfSk7Cn0KIiIiCm9wZW4oT1VULCAidyIpLndyaXRlKHdvcmtlcikKcHJpbnQoIndvcmtlciByZWJ1aWx0OiIsIGxlbih3b3JrZXIpLCAiYnl0ZXMsIiwgbGVuKHJvdXRlX21hcCkgKyAyLCAicm91dGVzIikK
+#!/usr/bin/env python3
+"""Rebuild the full sunofla worker JS from HTML sources in v2/ (Oct 9 production)."""
+import re, glob, os
+
+DIR = "/home/hatch/workspace/cloudflare-deploy/v2/"
+OUT = "/tmp/sunofla-worker-restructure.js"
+
+def minify(html):
+    html = re.sub(r'<!--(?!\[if).*?-->', '', html, flags=re.S)
+    html = re.sub(r'>\s+<', '><', html)
+    html = re.sub(r'\s{2,}', ' ', html)
+    html = re.sub(r'\n\s*', '', html)
+    return html.strip()
+
+def js_entry(route, content):
+    esc = content.replace('\\', '\\\\').replace('`', '\\`').replace('${', '\\${')
+    return f"  '{route}': `{esc}`,\n"
+
+route_map = {
+ 'index.html': '/',
+ 'workspace.html': '/workspace',
+ 'how-it-works.html': '/how-it-works',
+ 'solutions.html': '/solutions',
+ 'pilot-access.html': '/pilot-access',
+ 'onsite-it-how-it-works.html': '/onsite-it/how-it-works',
+ 'booking.html': '/booking',
+ 'industries.html': '/industries',
+ 'about.html': '/about',
+}
+
+entries = ""
+for fn, route in route_map.items():
+    p = DIR + fn
+    assert os.path.exists(p), f"missing {fn}"
+    entries += js_entry(route, minify(open(p).read()))
+
+# shared css assets
+import os as _os
+import base64
+# Oct 9 UI styles.css (primary for this build)
+_old_css = DIR + "styles.css"
+if _os.path.exists(_old_css):
+    entries += js_entry('/styles.css', open(_old_css).read())
+# assets-site.css (only if present, for newer pages)
+_new_css = DIR + "assets-site.css"
+if _os.path.exists(_new_css):
+    entries += js_entry('/assets/site.css', open(_new_css).read())
+
+# image assets (binary, base64 encoded)
+def js_binary_entry(route, filepath, content_type):
+    data = open(filepath, 'rb').read()
+    b64 = base64.b64encode(data).decode('ascii')
+    # Store as base64, decode at serve time
+    return f"  '{route}': {{ b64: `{b64}`, ct: '{content_type}' }},\n"
+
+_img_dir = DIR + "assets/"
+for _fn, _ct in [('network.webp', 'image/webp'),
+                 ('sunofla-ai-workspace-hero.webp', 'image/webp'),
+                 ('card-practical-ai.webp', 'image/webp'),
+                 ('card-studio-network.webp', 'image/webp'),
+                 ('card-backup-recovery.webp', 'image/webp')]:
+    _p = _img_dir + _fn
+    if _os.path.exists(_p):
+        entries += js_binary_entry('/assets/' + _fn, _p, _ct)
+
+# sitemap
+urls = [""] + [r for r in sorted(route_map.values()) if r != "/"]
+sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + \
+    "".join(f'  <url><loc>https://sunofla.com{u if u else "/"}</loc></url>\n' for u in urls) + '</urlset>\n'
+entries += js_entry('/sitemap.xml', sitemap)
+
+worker = """var PAGES = {
+""" + entries + """};
+
+addEventListener('fetch', function(event) {
+  event.respondWith(handleRequest(event.request));
+});
+async function handleRequest(request) {
+  var url = new URL(request.url);
+  var path = url.pathname;
+  if (path.length > 1 && path.endsWith('/')) path = path.slice(0, -1);
+  if (path.endsWith('.html')) path = path.slice(0, -5);
+  if (path === '/index') path = '/';
+  var entry = PAGES[path];
+  if (entry) {
+    // Binary asset (base64)
+    if (entry.b64) {
+      var bin = atob(entry.b64);
+      var bytes = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      return new Response(bytes, { headers: { 'Content-Type': entry.ct, 'Cache-Control': 'public, max-age=86400' } });
+    }
+    // Text content
+    var html = entry;
+    var ct = path === '/sitemap.xml' ? 'application/xml; charset=utf-8' : (path === '/assets/site.css' ? 'text/css; charset=utf-8' : (path === '/styles.css' ? 'text/css; charset=utf-8' : 'text/html; charset=utf-8'));
+    return new Response(html, { headers: { 'Content-Type': ct, 'Cache-Control': 'public, max-age=300' } });
+  }
+  return new Response('Not found', { status: 404 });
+}
+"""
+open(OUT, "w").write(worker)
+print("worker rebuilt:", len(worker), "bytes,", len(route_map) + 2, "routes")
