@@ -320,7 +320,9 @@ a.journey-action { margin-top: auto; padding: 16px 0 3px; display: flex; align-i
 .build-story-copy > p { margin: 0; color: #c2cfdb; line-height: 1.65; }
 .build-animation { display: grid; grid-template-columns: 1fr; align-items: stretch; }
 .build-stage { position: relative; min-width: 0; min-height: 250px; padding: 18px 20px; display: grid; grid-template-columns: 190px minmax(0, 1fr) 235px; align-items: center; gap: 22px; border: 1px solid rgba(248,250,252,.22); background: rgba(248,250,252,.035); }
-.stage-heading { display: flex; gap: 12px; align-items: start; }
+.stage-heading { display: flex; gap: 12px; align-items: start; flex-wrap: wrap; }
+.stage-heading > p { flex: 1 1 100%; margin: 2px 0 0; color: #c2cfdb; font-size: .76rem; line-height: 1.55; }
+.stage-heading > p b { color: var(--white); }
 .stage-heading > div { display: grid; gap: 3px; }
 .stage-heading strong { font-size: .98rem; line-height: 1.2; }
 .stage-heading small { color: #9fb1c2; font-size: .72rem; }

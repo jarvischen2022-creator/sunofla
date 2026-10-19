@@ -129,7 +129,6 @@
 <article><span>04</span><h3>Review the evidence</h3><p>Review usage, quality, cost, exceptions, and what should remain cloud-based, become local, or stop.</p></article>
 </div>
 </div></div>
-</div>
 </section>
 
 
@@ -238,20 +237,22 @@
 
 
 <section class="section roadmap-band"><div class="shell roadmap-stack"><section class="build-story" aria-labelledby="build-story-title">
-      <div class="build-story-copy"><div><p class="eyebrow">DEPLOYMENT CHOICES</p><h2 id="build-story-title">Choose the smallest practical place for your Workspace to run.</h2></div><p>A Pilot can begin in a dedicated cloud workspace. Local AI, shared storage, backup, or hybrid routing can be added when the workflow, data location, team size, or continuity requirements make them useful.</p><p class="deploy-sub">Examples of how a local or hybrid environment can grow when the workload requires it.</p></div>
+      <div class="build-story-copy"><div><p class="eyebrow">LOCAL / HYBRID WORKSPACE</p><h2 id="build-story-title">Need more control over where your company files and AI work run?</h2></div><p>A cloud Workspace is a practical place to start. When your team wants selected files, AI processing, shared storage, and backup to stay under more direct company control, Sunofla can add local hardware in your office and connect it to approved cloud AI only when needed.</p><p class="deploy-sub">The options below show how local hardware can add AI capability, shared storage, backup, and recovery to a controlled Workspace.</p></div>
       <div class="build-animation">
         <article class="build-stage stage-one">
-          <div class="stage-heading"><span class="stage-index">01</span><div><strong>AI Workstation Starter</strong><small>1–3 people</small></div></div>
+          <div class="stage-heading"><span class="stage-index">01</span><div><strong>Local AI Workstation</strong></div>
+          <p><b>Best for:</b> A small team that wants selected internal AI work to run on a dedicated office computer.</p></div>
           <div class="hardware-topology topology-starter" role="img" aria-label="A laptop connects to a GPU PC that runs local AI">
             <div class="hardware-node"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="8" width="30" height="23" rx="2"/><path d="M5 36h38l-3 4H8Z"/><path d="M18 35h12"/></svg><strong>Laptop</strong><small>Daily work</small></div>
             <span class="topology-line" aria-hidden="true"><i></i></span>
             <div class="hardware-node"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="7" width="29" height="23" rx="3"/><path d="M13 37h14M20 30v7M10 13h19M10 19h13"/><rect x="37" y="9" width="7" height="28" rx="1"/><circle cx="40.5" cy="31.5" r="1.5"/></svg><strong>GPU AI PC</strong><small>Models + files</small></div>
           </div>
-          <p><b>What changes:</b> one separate GPU PC becomes the team&rsquo;s local AI engine.</p>
+          <p><b>What changes:</b> A dedicated AI workstation handles selected work locally, while the team can still use approved cloud AI when appropriate.</p>
         </article>
         <div class="build-connector" aria-hidden="true"><span>→</span></div>
         <article class="build-stage stage-two">
-          <div class="stage-heading"><span class="stage-index">02</span><div><strong>Shared AI Workspace</strong><small>3–10 people</small></div></div>
+          <div class="stage-heading"><span class="stage-index">02</span><div><strong>Shared AI Workspace + Storage</strong></div>
+          <p><b>Best for:</b> A team that needs approved files, shared storage, and AI work to live in one clearer office environment.</p></div>
           <div class="hardware-topology topology-shared" role="img" aria-label="Several laptops connect to a GPU AI PC, which connects to network attached storage">
             <div class="client-bank" aria-hidden="true">
               <div class="hardware-node compact"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="8" width="30" height="23" rx="2"/><path d="M5 36h38l-3 4H8Z"/><path d="M18 35h12"/></svg><strong>Laptop 1</strong></div>
@@ -263,11 +264,12 @@
             <span class="topology-line" aria-hidden="true"><i></i></span>
             <div class="hardware-node"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="8" width="34" height="13" rx="3"/><rect x="7" y="27" width="34" height="13" rx="3"/><circle cx="34" cy="14.5" r="2"/><circle cx="34" cy="33.5" r="2"/><path d="M13 14.5h12M13 33.5h12"/></svg><strong>NAS</strong><small>Shared files</small></div>
           </div>
-          <p><b>What changes:</b> several laptops use one AI PC, while a NAS becomes the shared, protected data home.</p>
+          <p><b>What changes:</b> The team adds shared storage and a local AI system, creating a controlled home for approved sources, access rules, and backup planning.</p>
         </article>
         <div class="build-connector" aria-hidden="true"><span>→</span></div>
         <article class="build-stage stage-three">
-          <div class="stage-heading"><span class="stage-index">03</span><div><strong>Private AI + Continuity</strong><small>8–25 people</small></div></div>
+          <div class="stage-heading"><span class="stage-index">03</span><div><strong>Local / Hybrid Workspace + Continuity</strong></div>
+          <p><b>Best for:</b> A team that depends on access to important files and needs stronger recovery and continuity planning.</p></div>
           <div class="hardware-topology topology-continuity" role="img" aria-label="Team laptops connect through a 10 gigabit network to a dedicated GPU AI server and primary NAS, with a backup NAS, UPS, and monitoring">
             <div class="client-bank dense" aria-hidden="true">
               <div class="hardware-node compact"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="8" width="30" height="23" rx="2"/><path d="M5 36h38l-3 4H8Z"/><path d="M18 35h12"/></svg><strong>Team</strong></div>
@@ -288,11 +290,11 @@
               <div class="hardware-node compact"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="6" width="30" height="36" rx="3"/><path d="M26 11 18 25h8l-4 12 10-16h-8Z"/></svg><strong>UPS + Monitor</strong><small>Keep running</small></div>
             </div>
           </div>
-          <p><b>What changes:</b> 10GbE, dedicated AI compute, primary storage, a second protected copy, power protection, and monitoring.</p>
+          <p><b>What changes:</b> The environment adds dedicated AI compute, primary storage, a protected backup copy, power protection, and monitoring for more dependable recovery.</p>
         </article>
       </div>
       <div class="story-legend"><span><i class="pulse-dot"></i>Compute grows separately</span><span><i class="pulse-dot"></i>Storage gains protection</span><span><i class="pulse-dot"></i>Every line is a real connection</span></div>
-    </section></div></div></section>
+    </section></div></section>
 
 
 
